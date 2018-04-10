@@ -1,19 +1,17 @@
+<?php extract($context) ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<title>Index de WikiPolitica</title>
+	<title><?=$_TITLE?></title>
 </head>
 
 <body>
-	<h1>Index de WikiPolitica</h1>
+	<h1><?=$_TITLE?></h1>
 
-		
-	<p>This is some content for Index de WikiPolitica.</p>
-	<p>More content.</p>
-
-		
+	<?=$_CONTENT?>
+	
 	<footer>
 		© 2017 Secretaría Técnica
 		Equipo Ejecutivo de Wikipolítica Jalisco
