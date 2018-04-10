@@ -22,7 +22,32 @@ h5 {
 body {
   font-family: 'Open Sans', sans-serif;
 }
-.hola {
-  color: black;
+.btn.green,
+.btn.pink,
+.btn.yellow {
+  color: white;
+  font-weight: bolder;
+  box-shadow: 5px 5px 5px grey;
+}
+.btn.green {
+  background-color: #01b1af;
+}
+.btn.green:hover {
+  background-color: #006d6b;
+}
+.btn.pink {
+  background-color: #d1b0c6;
+}
+.btn.pink:hover {
+  background-color: #8d6c82;
+}
+.btn.yellow {
+  background-color: #dbd67b;
+}
+.btn.yellow:hover {
+  background-color: #979237;
+}
+.center {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

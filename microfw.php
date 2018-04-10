@@ -6,3 +6,11 @@ function render($layout, $context, $content_function) {
 	$context['_CONTENT'] = $content;
 	include("layouts/$layout.php");
 }
+
+function css($csss){
+	
+	foreach ($csss AS $css) {
+		echo '<link rel="stylesheet" href="css/'.$css.'">';
+	}
+
+}

@@ -2,15 +2,50 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+@green: rgba(1, 177, 175, 1);
+@pink: rgba(209, 176, 198, 1);
+@yellow: rgba(219, 214, 123, 1);
+@darker: #444;
+
 h1, h2, h3, h4, h5 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: bolder;
 }
+
 body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.hola {
- color:black;
- color:black;
+
+.btn.green, .btn.pink, .btn.yellow {
+	color: white;
+	font-weight: bolder;
+	box-shadow: 5px 5px 5px grey;
+}
+
+.btn {
+	
+	&.green {
+		background-color: @green;
+		&:hover {
+			background-color: @green - @darker;
+		}
+	}
+
+	&.pink {
+		background-color: @pink;
+		&:hover {
+			background-color: @pink - @darker;
+		}
+	}
+
+	&.yellow {
+		background-color: @yellow;
+		&:hover {
+			background-color: @yellow - @darker;
+		}
+	}
+}
+.center {
+	text-align: center;
 }
