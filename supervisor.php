@@ -18,6 +18,14 @@ while(true)
 		} 
 	}
 
+	foreach (glob("views/*.php") as $filename) {
+		$LastMod = filemtime($filename);
+		clearstatcache();
+		if ( time() < $LastMod+$seconds*2 ) {
+			process_all();	
+		} 
+	}
+
 	sleep($seconds);
 
 }

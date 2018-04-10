@@ -9,14 +9,31 @@
 </head>
 
 <body>
-	
-	<div class="container-fluid">
-		<?=$_CONTENT?>
-	</div>
-	
-	<footer>
-		© 2017 Secretaría Técnica
-		Equipo Ejecutivo de Wikipolítica Jalisco
+	<header class="container">
+		<ul>
+			<li><a href="index.html#inicio">Inicio</a></li>
+			<li><a href="index.html#nosotras">Nosotras</a></li>
+			<li><a href="index.html#esenciales">Esenciales</a></li>
+			<li><a href="index.html#proyectos">Proyectos</a></li>
+			<li><a href="index.html#estructura">Estructura</a></li>
+			<li><a href="index.html#contacto">Contacto</a></li>
+		</ul>
+		
+	</header>
+
+	<?=$_CONTENT?>
+		
+	<footer class="container">
+		<div class="row">
+			<div class="col">
+				© 2018 Secretaría Técnica<br/>
+				Equipo Ejecutivo de Wikipolítica Jalisco
+			</div>
+			<div class="col">
+				Siguenos en nuestras redes sociales:
+
+			</div>
+		</div>
 	</footer>
 	
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
