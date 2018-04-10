@@ -4,13 +4,15 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
 	<title><?=$_TITLE?></title>
 </head>
 
 <body>
-	<h1><?=$_TITLE?></h1>
-
-	<?=$_CONTENT?>
+	
+	<div class="container-fluid">
+		<?=$_CONTENT?>
+	</div>
 	
 	<footer>
 		© 2017 Secretaría Técnica
