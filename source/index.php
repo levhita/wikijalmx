@@ -3,18 +3,19 @@
 $context = [
 	'_TITLE' =>'Wikipólitica Jalisco',
 	'_CSS' => ['index.css'],
+	'_ACTIVE' => 'inicio',
 ];
 
 render('main', $context, function($context){
 	extract($context);
 	?>
 	
-	<div class="container" id="inicio">
+	<section class="container" id="inicio">
 		<h1>SOMOS<br>MUCHAS</h1>
 		<h1>Y YA NOS<br>ENCONTRAMOS</h1>
-	</div>
+	</section>
 	<hr>
-	<div class="container" id="nosotras">
+	<section class="container" id="nosotras">
 		<h1>QUÍENES<br>SOMOS</h1>
 		<p>
 			Somos una red de personas que buscamos nuevas formas de hacer política en colectivo.<br>
@@ -35,10 +36,8 @@ render('main', $context, function($context){
 			</div>
 		</div>
 		
-	</div>
-	<hr>
-
-	<div class="container" id="proyectos">
+	</section>
+	<section class="container" id="proyectos">
 		<div class="row">
 			<div class="col-8">
 				<h1>PROYECTOS</h1>
@@ -57,10 +56,9 @@ render('main', $context, function($context){
 				<a class="btn yellow" href="https://docs.google.com/document/d/11kY6WkmQFAQr22FohlOGIeg-0IfHL4K7_2bWGQ6aOZ4/edit?usp=sharing">Link de Descarga</a>
 			</div>
 		</div>
-	</div>
-	<hr>
-
-	<div class="container-fluid proyectos">
+	</section>
+	
+	<div class="container-fluid" id="lista_proyectos">
 		<div class="row">
 			<div class="col-lg" id="sinvoto">
 				<h3>#SinVotoNoHayDinero</h3>
@@ -93,8 +91,8 @@ render('main', $context, function($context){
 			</div>
 		</div>
 	</div>
-	<hr>
-	<div class="container">
+	
+	<section class="container" id="wiki_data">
 		<h1>WIKI<br>DATOS</h1>
 		<div class="row">
 			<div class="col">
@@ -114,10 +112,9 @@ render('main', $context, function($context){
 				<p>Tazas de Café</p>
 			</div>
 		</div>
-	</div>
-	<hr>
-
-	<div class="container" id="nodo_jalisco">
+	</section>
+	
+	<section class="container" id="estructura">
 		<div class="row">
 			<div class="col-8">
 				<h1>NODO<br>JALISCO</h1>
@@ -141,8 +138,8 @@ render('main', $context, function($context){
 				</ul>
 			</div>
 		</div>
-	</div>
-	<hr>
+	</section>
+	
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg asamblea_local">
@@ -159,6 +156,11 @@ render('main', $context, function($context){
 			</div>
 		</div>
 	</div>
+	
+	<section class="container" id="contacto">
+		<?php include('views/contact.php'); ?>
+	</section>
+	
 	<?php
 });
 ?>

@@ -1,4 +1,4 @@
-.proyectos .col-lg {
+#lista_proyectos .col-lg {
   text-align: center;
   padding-top: 180px;
   padding-bottom: 180px;
@@ -7,7 +7,7 @@
   color: rgba(255, 255, 255, 0);
   transition: color 0.3s ease-in-out;
 }
-.proyectos .col-lg:hover {
+#lista_proyectos .col-lg:hover {
   color: #ffffff;
   transition: color 0.3s ease-in-out;
 }

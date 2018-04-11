@@ -17,7 +17,7 @@ h5 {
 .btn.pink,
 .btn.yellow {
   color: white;
-  font-weight: boldest;
+  font-weight: bolder;
   box-shadow: 5px 5px 5px grey;
 }
 .btn.green {
@@ -40,5 +40,24 @@ h5 {
 }
 .center {
   text-align: center;
+}
+.right {
+  text-align: right;
+}
+.navbar {
+  background-color: #2f2e2e;
+}
+.navbar-brand img {
+  height: 50px;
+}
+#footer_container {
+  background-color: #2f2e2e;
+  margin-top: 60px;
+}
+footer {
+  color: white;
+}
+footer .row {
+  padding: 100px 0px 100px 0px;
 }
 /*# sourceMappingURL=main.css.map */

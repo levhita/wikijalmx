@@ -6,6 +6,9 @@
 @yellow: rgba(219, 214, 123, 1);
 @darker: #444;
 
+@back: rgba(47, 46, 46, 1);
+@spacer: 60px;
+
 h1, h2, h3, h4, h5 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: bolder;
@@ -13,7 +16,7 @@ h1, h2, h3, h4, h5 {
 
 .btn.green, .btn.pink, .btn.yellow {
 	color: white;
-	font-weight: boldest;
+	font-weight: bolder;
 	box-shadow: 5px 5px 5px grey;
 }
 
@@ -42,4 +45,27 @@ h1, h2, h3, h4, h5 {
 }
 .center {
 	text-align: center;
+}
+.right {
+	text-align: right;
+}
+.navbar {
+	background-color: @back;
+}
+.navbar-brand {
+	img {
+		height: 50px;
+	}
+}
+
+#footer_container {
+	background-color: @back;
+	margin-top: @spacer;
+}
+
+footer {
+	color: white;
+	.row {
+		padding:100px 0px 100px 0px;
+	}
 }

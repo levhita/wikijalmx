@@ -10,32 +10,45 @@
 </head>
 
 <body>
-	<header class="container">
-		<ul>
-			<li><a href="index.html#inicio">Inicio</a></li>
-			<li><a href="index.html#nosotras">Nosotras</a></li>
-			<li><a href="index.html#esenciales">Esenciales</a></li>
-			<li><a href="index.html#proyectos">Proyectos</a></li>
-			<li><a href="index.html#estructura">Estructura</a></li>
-			<li><a href="index.html#contacto">Contacto</a></li>
-		</ul>
+	
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<a class="navbar-brand" href="/"><img src="images/wikipolitica_logo.png"></a>
 		
-	</header>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto"></ul>
+			<ul class="navbar-nav mr-auto my-2 my-lg-0">
+				<li class="nav-item <?=($_ACTIVE=='inicio')?'active':''?>"><a  class="nav-link" href="index.html#inicio">Inicio</a></li>
+				<li class="nav-item"><a  class="nav-link" href="index.html#nosotras">Nosotras</a></li>
+				<li class="nav-item"><a class="nav-link" href="index.html#proyectos">Proyectos</a></li>
+				<li class="nav-item"><a class="nav-link" href="index.html#wiki_data">Wiki/Data</a></li>
+				<li class="nav-item"><a class="nav-link" href="index.html#estructura">Estructura</a></li>
+				<li class="nav-item <?=($_ACTIVE=='contacto')?'active':''?>"><a class="nav-link" href="contacto.html">Contacto</a></li>
+			</ul>
+		</div>
+	</nav>
 
 	<?=$_CONTENT?>
-		
-	<footer class="container">
-		<div class="row">
-			<div class="col">
-				© 2018 Secretaría Técnica<br/>
-				Equipo Ejecutivo de Wikipolítica Jalisco
+	<div id="footer_container">
+		<footer class="container">
+			<div class="row">
+				<div class="col">
+					© 2018 Secretaría Técnica<br/>
+					Equipo Ejecutivo de Wikipolítica Jalisco
+				</div>
+				<div class="col">
+					Siguenos en nuestras redes sociales:<br>
+					<a href="#"><img src="images/icons/facebook.png"></a>
+					<a href="#"><img src="images/icons/twitter.png"></a>
+					<a href="#"><img src="images/icons/instagram.png"></a>
+					<a href="#"><img src="images/icons/youtube.png"></a>
+				</div>
 			</div>
-			<div class="col">
-				Siguenos en nuestras redes sociales:
-
-			</div>
-		</div>
-	</footer>
+		</footer>
+	</div>
 	
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
