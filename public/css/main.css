@@ -5,12 +5,6 @@
   font-weight: 400;
   src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
 }
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
-}
 h1,
 h2,
 h3,
@@ -19,14 +13,11 @@ h5 {
   font-family: 'Raleway', sans-serif;
   font-weight: bolder;
 }
-body {
-  font-family: 'Open Sans', sans-serif;
-}
 .btn.green,
 .btn.pink,
 .btn.yellow {
   color: white;
-  font-weight: bolder;
+  font-weight: boldest;
   box-shadow: 5px 5px 5px grey;
 }
 .btn.green {
