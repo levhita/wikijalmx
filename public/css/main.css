@@ -28,12 +28,13 @@ h5 {
   position: fixed;
   width: 100%;
   top: 0px;
+  text-transform: uppercase;
+  /*.nav-link {
+		font-weight: bolder;
+	}*/
 }
 .navbar .navbar-brand img {
   height: 50px;
-}
-.navbar .nav-link {
-  font-weight: bolder;
 }
 #footer_container {
   background-color: #2f2e2e;

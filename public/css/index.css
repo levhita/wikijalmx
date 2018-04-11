@@ -9,7 +9,7 @@
 }
 .big_title {
   font-weight: bolder;
-  font-size: 90px;
+  font-size: 70px;
   line-height: 0.9em;
 }
 #lista_proyectos .col-lg {
@@ -67,7 +67,7 @@
 }
 .section h1 {
   font-weight: bolder;
-  font-size: 90px;
+  font-size: 70px;
   line-height: 0.9em;
 }
 #inicio {
@@ -78,8 +78,11 @@
 }
 #inicio h1 {
   font-weight: bolder;
-  font-size: 90px;
+  font-size: 70px;
   line-height: 0.9em;
+}
+#inicio h1 {
+  font-size: 90px;
 }
 #nosotras {
   padding: 100px 0px 100px 0px;
@@ -89,7 +92,7 @@
 }
 #nosotras h1 {
   font-weight: bolder;
-  font-size: 90px;
+  font-size: 70px;
   line-height: 0.9em;
 }
 #proyectos {
@@ -99,7 +102,110 @@
 }
 #proyectos h1 {
   font-weight: bolder;
-  font-size: 90px;
+  font-size: 70px;
+  line-height: 0.9em;
+}
+#proyectos .descarga {
+  padding: 20px;
+  background-color: #EEE;
+  text-align: center;
+}
+#wiki_data {
+  padding: 100px 0px 100px 0px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url('../images/backgrounds/asamblea_3.jpg');
+  color: white;
+}
+#wiki_data h1 {
+  font-weight: bolder;
+  font-size: 70px;
+  line-height: 0.9em;
+}
+#wiki_data h2 {
+  font-size: 3em;
+}
+#wiki_data p {
+  margin-top: .5em;
+  font-size: 1.5em;
+  line-height: 0.9em;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+#estructura {
+  padding: 100px 0px 100px 0px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#estructura h1 {
+  font-weight: bolder;
+  font-size: 70px;
+  line-height: 0.9em;
+}
+#estructura .otros {
+  padding: 20px;
+  background-color: #2f2e2e;
+  color: white;
+}
+#estructura .otros a {
+  color: white;
+  text-decoration: none;
+}
+#estructura .otros a:hover {
+  text-decoration: underline;
+}
+#asamblea_local {
+  background-image: url('../images/asamblea_local.png');
+  background-size: cover;
+}
+#consejo_politico {
+  background-image: url('../images/consejo_politico.png');
+  background-size: cover;
+}
+#consejo_vigilancia {
+  background-image: url('../images/consejo_vigilancia.png');
+  background-size: cover;
+}
+#equipo_ejecutivo {
+  background-image: url('../images/equipo_ejecutivo.png');
+  background-size: cover;
+}
+#estructura_detalle {
+  background-image: url('../images/backgrounds/asamblea_2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+#estructura_detalle .col-lg {
+  font-size: 2em;
+  text-align: center;
+  padding: 0px;
+  background-position: center center;
+}
+#estructura_detalle .col-lg .overlay {
+  display: block;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  color: rgba(255, 255, 255, 0);
+  background-color: rgba(0, 0, 0, 0);
+  transition: color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  width: 100%;
+  text-decoration: none;
+}
+#estructura_detalle .col-lg .overlay:hover {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+#contacto {
+  padding: 100px 0px 100px 0px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#contacto h1 {
+  font-weight: bolder;
+  font-size: 70px;
   line-height: 0.9em;
 }
 .btn.green {
