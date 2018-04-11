@@ -1,36 +1,97 @@
+@import "variables.less";
+
+.big_title {
+	font-weight: bolder;
+	font-size: 90px;
+	line-height: 0.9em;
+}
 
 #lista_proyectos .col-lg {
+	font-size: 1.5em;
 	text-align: center;
-	padding-top: 180px;
-	padding-bottom: 180px;
-	background-repeat: no-repeat;
-	background-position: center;
-	color:rgba(255,255,255,0);
-	transition: color 0.3s ease-in-out;
-	&:hover {
-		color:rgba(255,255,255,1);
+	padding:0px;
+	.overlay {
+		display: block;
+		
+		padding-top: 180px;
+		padding-bottom: 180px;
+		background-repeat: no-repeat;
+		background-position: center;
+		color:rgba(255,255,255,0);
+		background-color: rgba(0,0,0, 0);
 		transition: color 0.3s ease-in-out;
+		transition: background-color 0.3s ease-in-out;
+		width:100%;
+		&:hover {
+			color:rgba(255,255,255,1);
+			background-color: rgba(0,0,0,0.6);
+			transition: color 0.3s ease-in-out;
+			transition: background-color 0.3s ease-in-out;
+		}
+		text-decoration: none;
 	}
 }
 
+.cover(@img) {
+	background-image: url(@img);
+	background-size: cover;
+}
+#informe { .cover('../images/informe.jpg'); }
+#observatorio{ .cover('../images/observatorio.jpg'); }
+#ocupacion{ .cover('../images/ocupacion.jpg'); }
+#presupuesto{ .cover('../images/presupuesto.jpg'); }
+#sinvoto{ .cover('../images/sinvoto.jpg'); }
+#var{.cover('../images/var.jpg');}
 
 
 
-#informe {
-	background-image: url('../images/informe.jpg');
+.section{
+	padding: 100px 0px 100px 0px;
+	background-size: cover;
+	background-attachment: fixed;
+	
+	h1 {
+		.big_title;
+	}
 }
-#observatorio{
-	background-image: url('../images/observatorio.jpg');
+#inicio {
+	.section;
+	background-image: url('../images/backgrounds/asamblea_2.jpg');
 }
-#ocupacion{
-	background-image: url('../images/ocupacion.jpg');
+
+#nosotras {
+	.section;
+	background-image: url('../images/backgrounds/asamblea_1.jpg');
 }
-#presupuesto{
-	background-image: url('../images/presupuesto.jpg');
+
+#proyectos {
+	.section;
 }
-#sinvoto{
-	background-image: url('../images/sinvoto.jpg');
+
+.button(@color){
+	display:inline-block;
+	color: white;
+	font-weight: bolder;
+	box-shadow: 5px 5px 5px grey;
+
+	font-size: 1.3em;
+	background-color: @color;
+	&:hover {
+		background-color: @color - @darker;
+	}
 }
-#var{
-	background-image: url('../images/var.jpg');
+
+.btn {
+	
+	&.green {
+		.button(@green);
+	}
+
+	&.pink {
+		.button(@pink);
+	}
+
+	&.yellow {
+		.button(@yellow)
+	}
 }

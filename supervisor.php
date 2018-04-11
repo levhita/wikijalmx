@@ -27,7 +27,6 @@ while(true)
 	}
 
 	sleep($seconds);
-
 }
 
 function process($filename) {

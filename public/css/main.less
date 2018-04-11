@@ -1,60 +1,26 @@
 /** set title **/
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-
-@green: rgba(1, 177, 175, 1);
-@pink: rgba(209, 176, 198, 1);
-@yellow: rgba(219, 214, 123, 1);
-@darker: #444;
-
-@back: rgba(47, 46, 46, 1);
-@spacer: 60px;
+@import "variables.less";
 
 h1, h2, h3, h4, h5 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: bolder;
 }
 
-.btn.green, .btn.pink, .btn.yellow {
-	color: white;
-	font-weight: bolder;
-	box-shadow: 5px 5px 5px grey;
-}
-
-.btn {
-	
-	&.green {
-		background-color: @green;
-		&:hover {
-			background-color: @green - @darker;
-		}
-	}
-
-	&.pink {
-		background-color: @pink;
-		&:hover {
-			background-color: @pink - @darker;
-		}
-	}
-
-	&.yellow {
-		background-color: @yellow;
-		&:hover {
-			background-color: @yellow - @darker;
-		}
-	}
-}
-.center {
-	text-align: center;
-}
-.right {
-	text-align: right;
-}
 .navbar {
+	z-index: 100;
 	background-color: @back;
-}
-.navbar-brand {
-	img {
-		height: 50px;
+	position:fixed;
+	width:100%;
+	top:0px;
+
+	.navbar-brand {
+		img {
+			height: 50px;
+		}
+	}
+	.nav-link {
+		font-weight: bolder;
 	}
 }
 
@@ -66,6 +32,10 @@ h1, h2, h3, h4, h5 {
 footer {
 	color: white;
 	.row {
-		padding:100px 0px 100px 0px;
+		padding:180px 0px 180px 0px;
 	}
+}
+
+body {
+	padding-top: 75px;
 }
