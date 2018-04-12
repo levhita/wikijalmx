@@ -74,7 +74,6 @@ render('main', $context, function($context){
 						<li>Feminismo</li>
 					</ul>
 
-					<p><a href="anexos.html#principios">Conoce nuestros principios a más detalle...</a></p>
 				</div>
 				<div class="col-lg">
 					<h2>Valores de Wikipolítica</h2>
@@ -89,11 +88,11 @@ render('main', $context, function($context){
 						<li>Resiliencia</li>
 					</ul>
 
-					<p class="center"><a href="anexos.html#valores">Conoce nuestros valores a más detalle...</a></p>
 				</div>
 			</div>
-
+			<p class="right">Conoce nuestros <a class="reverse" href="principios_valores.html">&nbsp;&nbsp;principios y valores&nbsp;&nbsp;</a> a más detalle.</a></p>
 		</div>
+
 	</section>
 
 	<?php

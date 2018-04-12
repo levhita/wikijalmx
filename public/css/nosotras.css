@@ -96,12 +96,17 @@
   padding: 100px 0px 100px 0px;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url('../images/backgrounds/asamblea_2.jpg');
+  background-image: url('../images/backgrounds/asamblea_3.jpg');
+  color: white;
 }
 #inicio h1 {
   font-weight: bolder;
   font-size: 70px;
   line-height: 0.9em;
+}
+#inicioa,
+#inicio a {
+  color: white;
 }
 #porque {
   padding: 100px 0px 100px 0px;
@@ -117,7 +122,7 @@
   padding: 100px 0px 100px 0px;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url('../images/backgrounds/asamblea_3.jpg');
+  background-color: #f78888;
   color: white;
 }
 #que h1 {
@@ -128,6 +133,16 @@
 #quea,
 #que a {
   color: white;
+}
+#que a.reverse {
+  color: #f78888;
+  background-color: #ffffff;
+  font-weight: bolder;
+}
+#que a.reverse:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.5s;
 }
 #historia {
   padding: 100px 0px 100px 0px;

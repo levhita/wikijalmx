@@ -2,7 +2,8 @@
 
 #inicio {
 	.section;
-	background-image: url('../images/backgrounds/asamblea_2.jpg');
+	background-image: url('../images/backgrounds/asamblea_3.jpg');
+	.white;
 }
 #porque {
 	.section;
@@ -10,10 +11,21 @@
 
 #que {
 	.section;
-	background-image: url('../images/backgrounds/asamblea_3.jpg');
+	background-color: @pink;
 	.white;
+	a.reverse {
+		color: @pink;
+		background-color: rgba(255,255,255, 1);
+		font-weight: bolder;
+		&:hover {
+			text-decoration: none;
+					background-color: rgba(255,255,255, 0.8);
+					transition: background-color 0.5s;
+		}
+	}
 }
 
 #historia {
 	.section;
 }
+
