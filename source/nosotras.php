@@ -28,7 +28,7 @@ render('main', $context, function($context){
 					<a class="btn hot_yellow" href="#historia">Un poco de historia</a>
 				</div>
 				<div class="col center">
-					<a class="btn hot_green" href="como">¿Cómo ser parte?</a>
+					<a class="btn hot_green" href="#participar">¿Cómo ser parte?</a>
 				</div>
 			</div>
 
@@ -97,7 +97,7 @@ render('main', $context, function($context){
 
 	<section id="historia">
 		<div class="container">
-			
+
 			<h1>UN POCO<br>DE HISTORIA...</h1>
 			<p>Wikipolítica nace como organización en verano de 2014. Sus inicios se remontan a la efervescencia política vivida durante el 2012 y los primeros intentos que le siguieron para articular el descontento hacia una nueva política que nos hiciera sentido. A continuación presentamos una línea del tiempo sobre Wikipolítica Jalisco y sus antecedentes.</p>
 			<div id="historyCarousel" class="carousel slide" data-ride="carousel">
@@ -126,10 +126,38 @@ render('main', $context, function($context){
 					<span class="sr-only">Next</span>
 				</a>
 			</div>
-			
+
 		</div>
 	</section>
 
+	<section id="participar">
+		<div class="container">
+			<h1>CÓMO PARTICIPAR EN<br>
+			WIKIPOLÍTICA JALISCO</h1>
+			<p>Después de transitar por distintos modelos de asambleas, comisiones y juntas periódicas, nos hemos convencido de que <strong>la mejor forma de hacer Wikipolítica es de manera abierta</strong>. Cualquier persona puede participar e involucrarse en el trabajo y toma de decisiones hasta donde su compromiso y los principios que compartimos lo permitan.</p>
+
+			<p>Todas las personas que estamos aquí somos wikis. Por eso son tan importantes <strong>las temperaturas de participación</strong>, que nos permiten organizarnos y actuar como una red, fundamentada en reconocernos y reconocer la diversidad de voluntades que forman esta  generosa comunidad en lo virtual y presencial.</p>
+
+			<p>Nos vemos <strong>una vez al mes en los Encuentros Mensuales</strong> de la comunidad, <strong>colaboramos en proyectos</strong> y nos mantenemos en comunicación por <strong>canales virtuales</strong>, donde podemos aprender y convivir mientras hacemos política entre personas comunes.</p>
+
+			<div class="reverse">
+				El primer paso para participar es asistir a alguno de los <strong>Encuentros Mensuales*</strong>. En ellos podrás registrarte como wiki, impartir algún taller o unirte algúna de las mesas de trabajo.
+			</div>
+			<div class="right small">* La invitación es siempre abierta y anunciada en nuestras redes sociales.</div>
+
+						<h2>¿Cómo Discutimos?</h2>
+			<p>En Wikipolítica <strong>privilegiamos el diálogo</strong> donde pueden escucharse todas las voces. Creemos que <strong>la deliberación colectiva vale la pena</strong>, aunque reconocemos la complejidad de llevarse de manera sostenible entre muchas personas.</p>
+
+			<p>Es por esto que <strong>buscamos constantemente innovar en la forma en la que discutimos y tomamos decisiones</strong>. Esto nos ha permitido reconocer prácticas deseables para cada tipo de espacio de discusión, ya sea <strong>presencial o virtual</strong>.</p>
+			
+			<p>Partimos de <strong>ser excelentes en todo momento</strong>, eso implica el respeto al tiempo y opinión de otras personas, saber complementar o refutar las ideas sin olvidar que hay una persona con un contexto y motivaciones válidas detrás. <strong>Asumimos buena fe y colaboramos</strong> sin dejar de nutrir nuestro sentido crítico colectivamente.</p>
+
+			<p>Para <strong>decisiones trascendentales</strong> de la organización, como la votación de cargos y de asuntos de la estrategia general de Wikipolítica Jalisco, <strong>se deben sumar los méritos</strong> suficientes para acceder al derecho al voto, el cual se ejerce en Asambleas Semestrales y en canales virtuales.</p>
+
+		</div>
+		<img src="images/meritos.png" alt="sistema de méritos" style="width:100%"/>
+		
+	</section>
 	<?php
 });
 ?>

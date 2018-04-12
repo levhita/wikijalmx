@@ -160,4 +160,20 @@
 #historia a {
   color: white;
 }
+#participar {
+  padding: 100px 0px 100px 0px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#participar h1 {
+  font-weight: bolder;
+  font-size: 70px;
+  line-height: 0.9em;
+}
+#participar .reverse {
+  color: white;
+  background-color: #00bc94;
+  padding: 20px;
+  font-size: 1.3em;
+}
 /*# sourceMappingURL=nosotras.css.map */
