@@ -21,11 +21,11 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto"></ul>
 			<ul class="navbar-nav mr-auto my-2 my-lg-0">
-				<li class="nav-item <?=($_ACTIVE=='inicio')?'active':''?>"><a  class="nav-link" href="index.html#inicio">Inicio</a></li>
-				<li class="nav-item"><a  class="nav-link" href="index.html#nosotras">Nosotras</a></li>
-				<li class="nav-item"><a class="nav-link" href="index.html#proyectos">Proyectos</a></li>
-				<li class="nav-item"><a class="nav-link" href="index.html#wiki_data">Wiki/Data</a></li>
-				<li class="nav-item"><a class="nav-link" href="index.html#estructura">Estructura</a></li>
+				<li class="nav-item <?=($_ACTIVE=='inicio')?'active':''?>"><a  class="nav-link" href="/">Inicio</a></li>
+				<li class="nav-item <?=($_ACTIVE=='nosotras')?'active':''?>"><a  class="nav-link" href="nosotras.html">Nosotras</a></li>
+				<li class="nav-item <?=($_ACTIVE=='esenciales')?'active':''?>"><a class="nav-link" href="esenciales.html">Esenciales</a></li>
+				<li class="nav-item <?=($_ACTIVE=='proyectos')?'active':''?>"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+				<li class="nav-item <?=($_ACTIVE=='estructura')?'active':''?>"><a class="nav-link" href="estructura.html">Estructura</a></li>
 				<li class="nav-item <?=($_ACTIVE=='contacto')?'active':''?>"><a class="nav-link" href="contacto.html">Contacto</a></li>
 			</ul>
 		</div>

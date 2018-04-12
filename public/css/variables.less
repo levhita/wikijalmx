@@ -1,8 +1,13 @@
-@green: rgba(1, 177, 175, 1);
-@pink: rgba(209, 176, 198, 1);
-@yellow: rgba(219, 214, 123, 1);
-@darker: #444;
+@green: #00bc94;
+@hot_green: #00e4c1;
 
+@pink: #f78888;
+@hot_pink: #ff2665;
+
+@yellow: rgba(219, 214, 123, 1);
+@hot_yellow: #ffcf48;
+
+@darker: #444;
 
 @back: rgba(47, 46, 46, 1);
 @spacer: 60px;
@@ -16,4 +21,68 @@
 
 .white {
 	color:white;
+	&a, a {
+		color:white;
+	}
+}
+
+.cover(@img) {
+	background-image: url(@img);
+	background-size: cover;
+}
+
+.section {
+	padding: 100px 0px 100px 0px;
+	background-size: cover;
+	background-attachment: fixed;
+	
+	h1 {
+		.big_title;
+	}
+}
+
+.big_title {
+	font-weight: bolder;
+	font-size: 70px;
+	line-height: 0.9em;
+}
+
+.button(@color){
+	display:inline-block;
+	color: white;
+	font-weight: bolder;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+
+	font-size: 1.3em;
+	background-color: @color;
+	&:hover {
+		background-color: @color - @darker;
+	}
+}
+
+
+.btn {
+	
+	&.green {
+		.button(@green);
+	}
+
+	&.pink {
+		.button(@pink);
+	}
+
+	&.yellow {
+		.button(@yellow)
+	}
+	&.hot_green {
+		.button(@hot_green);
+	}
+
+	&.hot_pink {
+		.button(@hot_pink);
+	}
+
+	&.hot_yellow {
+		.button(@hot_yellow)
+	}
 }

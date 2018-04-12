@@ -30,13 +30,13 @@ render('main', $context, function($context){
 			<br><br><br>
 			<div class="row">
 				<div class="col center">
-					<a class="btn green" href="como">Cómo ser parte</a>
+					<a class="btn hot_green" href="como">Cómo ser parte</a>
 				</div>
 				<div class="col center">
-					<a class="btn pink" href="como">Lo que nos mueve</a>
+					<a class="btn hot_pink" href="como">Lo que nos mueve</a>
 				</div>
 				<div class="col center">
-					<a class="btn yellow" href="como">Un poco de historia</a>
+					<a class="btn hot_yellow" href="como">Un poco de historia</a>
 				</div>
 			</div>
 

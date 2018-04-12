@@ -7,6 +7,105 @@
 .white {
   color: white;
 }
+.section {
+  padding: 100px 0px 100px 0px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section h1 {
+  font-weight: bolder;
+  font-size: 70px;
+  line-height: 0.9em;
+}
+.big_title {
+  font-weight: bolder;
+  font-size: 70px;
+  line-height: 0.9em;
+}
+.btn.green {
+  display: inline-block;
+  color: white;
+  font-weight: bolder;
+  box-shadow: 5px 5px 5px grey;
+  font-size: 1.3em;
+  background-color: #00bc94;
+}
+.btn.green:hover {
+  background-color: #007850;
+}
+.btn.green:hover {
+  background-color: #007850;
+}
+.btn.pink {
+  display: inline-block;
+  color: white;
+  font-weight: bolder;
+  box-shadow: 5px 5px 5px grey;
+  font-size: 1.3em;
+  background-color: #f78888;
+}
+.btn.pink:hover {
+  background-color: #b34444;
+}
+.btn.pink:hover {
+  background-color: #b34444;
+}
+.btn.yellow {
+  display: inline-block;
+  color: white;
+  font-weight: bolder;
+  box-shadow: 5px 5px 5px grey;
+  font-size: 1.3em;
+  background-color: #dbd67b;
+}
+.btn.yellow:hover {
+  background-color: #979237;
+}
+.btn.yellow:hover {
+  background-color: #979237;
+}
+.btn.hot_green {
+  display: inline-block;
+  color: white;
+  font-weight: bolder;
+  box-shadow: 5px 5px 5px grey;
+  font-size: 1.3em;
+  background-color: #00e4c1;
+}
+.btn.hot_green:hover {
+  background-color: #00a07d;
+}
+.btn.hot_green:hover {
+  background-color: #00a07d;
+}
+.btn.hot_pink {
+  display: inline-block;
+  color: white;
+  font-weight: bolder;
+  box-shadow: 5px 5px 5px grey;
+  font-size: 1.3em;
+  background-color: #ff2665;
+}
+.btn.hot_pink:hover {
+  background-color: #bb0021;
+}
+.btn.hot_pink:hover {
+  background-color: #bb0021;
+}
+.btn.hot_yellow {
+  display: inline-block;
+  color: white;
+  font-weight: bolder;
+  box-shadow: 5px 5px 5px grey;
+  font-size: 1.3em;
+  background-color: #ffcf48;
+}
+.btn.hot_yellow:hover {
+  background-color: #bb8b04;
+}
+.btn.hot_yellow:hover {
+  background-color: #bb8b04;
+}
 .big_title {
   font-weight: bolder;
   font-size: 70px;
@@ -82,6 +181,11 @@
   line-height: 0.9em;
 }
 #inicio h1 {
+  font-weight: bolder;
+  font-size: 70px;
+  line-height: 0.9em;
+}
+#inicio h1 {
   font-size: 90px;
 }
 #nosotras {
@@ -95,10 +199,20 @@
   font-size: 70px;
   line-height: 0.9em;
 }
+#nosotras h1 {
+  font-weight: bolder;
+  font-size: 70px;
+  line-height: 0.9em;
+}
 #proyectos {
   padding: 100px 0px 100px 0px;
   background-size: cover;
   background-attachment: fixed;
+}
+#proyectos h1 {
+  font-weight: bolder;
+  font-size: 70px;
+  line-height: 0.9em;
 }
 #proyectos h1 {
   font-weight: bolder;
@@ -122,6 +236,11 @@
   font-size: 70px;
   line-height: 0.9em;
 }
+#wiki_data h1 {
+  font-weight: bolder;
+  font-size: 70px;
+  line-height: 0.9em;
+}
 #wiki_data h2 {
   font-size: 3em;
 }
@@ -136,6 +255,11 @@
   padding: 100px 0px 100px 0px;
   background-size: cover;
   background-attachment: fixed;
+}
+#estructura h1 {
+  font-weight: bolder;
+  font-size: 70px;
+  line-height: 0.9em;
 }
 #estructura h1 {
   font-weight: bolder;
@@ -208,16 +332,24 @@
   font-size: 70px;
   line-height: 0.9em;
 }
+#contacto h1 {
+  font-weight: bolder;
+  font-size: 70px;
+  line-height: 0.9em;
+}
 .btn.green {
   display: inline-block;
   color: white;
   font-weight: bolder;
   box-shadow: 5px 5px 5px grey;
   font-size: 1.3em;
-  background-color: #01b1af;
+  background-color: #00bc94;
 }
 .btn.green:hover {
-  background-color: #006d6b;
+  background-color: #007850;
+}
+.btn.green:hover {
+  background-color: #007850;
 }
 .btn.pink {
   display: inline-block;
@@ -225,10 +357,13 @@
   font-weight: bolder;
   box-shadow: 5px 5px 5px grey;
   font-size: 1.3em;
-  background-color: #d1b0c6;
+  background-color: #f78888;
 }
 .btn.pink:hover {
-  background-color: #8d6c82;
+  background-color: #b34444;
+}
+.btn.pink:hover {
+  background-color: #b34444;
 }
 .btn.yellow {
   display: inline-block;
@@ -237,6 +372,9 @@
   box-shadow: 5px 5px 5px grey;
   font-size: 1.3em;
   background-color: #dbd67b;
+}
+.btn.yellow:hover {
+  background-color: #979237;
 }
 .btn.yellow:hover {
   background-color: #979237;

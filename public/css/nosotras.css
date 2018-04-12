@@ -1,10 +1,3 @@
-/** set title **/
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
-}
 .center {
   text-align: center;
 }
@@ -99,38 +92,51 @@
 .btn.hot_yellow:hover {
   background-color: #bb8b04;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Raleway', sans-serif;
+#inicio {
+  padding: 100px 0px 100px 0px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url('../images/backgrounds/asamblea_2.jpg');
+}
+#inicio h1 {
   font-weight: bolder;
+  font-size: 70px;
+  line-height: 0.9em;
 }
-.navbar {
-  z-index: 100;
-  background-color: #2f2e2e;
-  position: fixed;
-  width: 100%;
-  top: 0px;
-  text-transform: uppercase;
-  /*.nav-link {
-		font-weight: bolder;
-	}*/
+#porque {
+  padding: 100px 0px 100px 0px;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.navbar .navbar-brand img {
-  height: 50px;
+#porque h1 {
+  font-weight: bolder;
+  font-size: 70px;
+  line-height: 0.9em;
 }
-#footer_container {
-  background-color: #2f2e2e;
-}
-footer {
+#que {
+  padding: 100px 0px 100px 0px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url('../images/backgrounds/asamblea_3.jpg');
   color: white;
 }
-footer .row {
-  padding: 50px 0px 50px 0px;
+#que h1 {
+  font-weight: bolder;
+  font-size: 70px;
+  line-height: 0.9em;
 }
-body {
-  padding-top: 75px;
+#quea,
+#que a {
+  color: white;
 }
-/*# sourceMappingURL=main.css.map */
+#historia {
+  padding: 100px 0px 100px 0px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#historia h1 {
+  font-weight: bolder;
+  font-size: 70px;
+  line-height: 0.9em;
+}
+/*# sourceMappingURL=nosotras.css.map */
