@@ -141,11 +141,13 @@ render('main', $context, function($context){
 			<p>Nos vemos <strong>una vez al mes en los Encuentros Mensuales</strong> de la comunidad, <strong>colaboramos en proyectos</strong> y nos mantenemos en comunicación por <strong>canales virtuales</strong>, donde podemos aprender y convivir mientras hacemos política entre personas comunes.</p>
 
 			<div class="reverse">
-				El primer paso para participar es asistir a alguno de los <strong>Encuentros Mensuales*</strong>. En ellos podrás registrarte como wiki, impartir algún taller o unirte algúna de las mesas de trabajo.
+				El primer paso para participar es asistir a alguno de los <strong>Encuentros Mensuales*</strong>. En ellos podrás registrarte como wiki, impartir un taller o unirte a algúna de las mesas de trabajo.
 			</div>
 			<div class="right small">* La invitación es siempre abierta y anunciada en nuestras redes sociales.</div>
 
-						<h2>¿Cómo Discutimos?</h2>
+			<br>
+			
+			<h2>¿Cómo Discutimos?</h2>
 			<p>En Wikipolítica <strong>privilegiamos el diálogo</strong> donde pueden escucharse todas las voces. Creemos que <strong>la deliberación colectiva vale la pena</strong>, aunque reconocemos la complejidad de llevarse de manera sostenible entre muchas personas.</p>
 
 			<p>Es por esto que <strong>buscamos constantemente innovar en la forma en la que discutimos y tomamos decisiones</strong>. Esto nos ha permitido reconocer prácticas deseables para cada tipo de espacio de discusión, ya sea <strong>presencial o virtual</strong>.</p>
