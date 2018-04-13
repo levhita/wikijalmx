@@ -3,46 +3,27 @@ include("microfw.php");
 include("db.php");
 $context = [
 	'_TITLE' =>'Esenciales | Wikipólitica Jalisco',
-	'_CSS' => ['css/esenciales.css'],
-	'_ACTIVE' => 'esenciales',
+	'_CSS' => ['css/publicaciones.css'],
+	'_ACTIVE' => 'publicaciones',
 ];
 
-$Query = $Db->prepare("SELECT * from posts ORDER BY date DESC LIMIT 6;");
-$Query->execute();
-$context['posts'] = $Query->fetchAll(PDO::FETCH_OBJ);
-render('main', $context, function($context){
+	$Query = $Db->prepare("SELECT * from posts ORDER BY date DESC;");
+	$Query->execute();
+	$context['posts'] = $Query->fetchAll(PDO::FETCH_OBJ);
+	render('main', $context, function($context){
 	extract($context);
 	?>
-	<section id="wiki_data">
+	<section id="inicio">
 		<div class="container">
-			<h1>WIKI<br>DATOS</h1>
-			<br>
-			<div class="row">
-				<div class="col">
-					<h2>92</h2>
-					<p>Asambleistas Locales</p>
-				</div>
-				<div class="col">
-					<h2>690</h2>
-					<p>Integrantes en Jalisco</p>
-				</div>
-				<div class="col">
-					<h2>11</h2>
-					<p>Proyectos Emprendidos</p>
-				</div>
-				<div class="col">
-					<h2>12,603</h2>
-					<p>Tazas de Café</p>
-				</div>
-			</div>
+			<h1>PUBLICACIONES<br>RECIENTES</h1>
+			
+			<p>La pluralidad de ideas es una constante en Wikipolítica, varios de nuestros integrantes cuentan con columnas, las compartimos para tu lectura.</p>
+			
 		</div>
 	</section>
 
 	<section id="publicaciones">
 		<div class="container">
-			<h1>PUBLICACIONES<br>RECIENTES</h1>
-			
-			<p>La pluralidad de ideas es una constante en Wikipolítica, varios de nuestros integrantes cuentan con columnas, las compartimos para tu lectura.</p>
 			
 			<div class="row">
 				<?php foreach($posts as $post): ?>
@@ -61,7 +42,6 @@ render('main', $context, function($context){
 					</div>
 				<?php endforeach; ?>
 			</div>
-			<p class="right"><a href="publicaciones.html" class="btn hot_green">Ver todas las publicaciones...</a></p>
 		</div>
 	</section>
 	<?php

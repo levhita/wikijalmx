@@ -92,27 +92,17 @@
 .btn.hot_yellow:hover {
   background-color: #bb8b04;
 }
-#wiki_data {
+#inicio {
   padding: 100px 0px 100px 0px;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url('../images/backgrounds/asamblea_3.jpg');
-  color: white;
+  background-color: #ffcf48;
+  /*color:white;*/
 }
-#wiki_data h1 {
+#inicio h1 {
   font-weight: bolder;
   font-size: 70px;
   line-height: 0.9em;
-}
-#wiki_data h2 {
-  font-size: 3em;
-}
-#wiki_data p {
-  margin-top: .5em;
-  font-size: 1.5em;
-  line-height: 0.9em;
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
 }
 #publicaciones {
   padding: 100px 0px 100px 0px;
@@ -124,7 +114,7 @@
   font-size: 70px;
   line-height: 0.9em;
 }
-.card {
-  margin-bottom: 20px;
+#publicaciones .card {
+  margin-bottom: 1em;
 }
-/*# sourceMappingURL=esenciales.css.map */
+/*# sourceMappingURL=publicaciones.css.map */
