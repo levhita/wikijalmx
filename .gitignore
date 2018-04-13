@@ -1,3 +1,7 @@
 public/css/variables.css
 public/css/variables.css.map
 db.php
+public/admin/config.php
+public/admin/.htaccess
+.htpasswd
+public/.htpasswd
