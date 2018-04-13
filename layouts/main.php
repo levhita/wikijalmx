@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="css/main.css">
 	<title><?=$_TITLE?></title>
 	<?=css($_CSS)?>
+	<link rel="icon" href="images/favicon.png">
+	<link rel="apple-touch-icon-precomposed" href="images/favicon_apple.png">
 </head>
 
 <body>
