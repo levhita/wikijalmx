@@ -7,6 +7,10 @@
 .white {
   color: white;
 }
+.whitea,
+.white a {
+  color: white;
+}
 .section {
   padding: 100px 0px 100px 0px;
   background-size: cover;
@@ -23,6 +27,7 @@
   line-height: 0.9em;
 }
 .btn.green {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   display: inline-block;
   color: white;
   font-weight: bolder;
@@ -37,6 +42,7 @@
   background-color: #007850;
 }
 .btn.pink {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   display: inline-block;
   color: white;
   font-weight: bolder;
@@ -51,6 +57,7 @@
   background-color: #b34444;
 }
 .btn.yellow {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   display: inline-block;
   color: white;
   font-weight: bolder;
@@ -65,6 +72,7 @@
   background-color: #979237;
 }
 .btn.hot_green {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   display: inline-block;
   color: white;
   font-weight: bolder;
@@ -79,6 +87,7 @@
   background-color: #00a07d;
 }
 .btn.hot_pink {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   display: inline-block;
   color: white;
   font-weight: bolder;
@@ -93,6 +102,7 @@
   background-color: #bb0021;
 }
 .btn.hot_yellow {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   display: inline-block;
   color: white;
   font-weight: bolder;
@@ -338,6 +348,7 @@
   line-height: 0.9em;
 }
 .btn.green {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   display: inline-block;
   color: white;
   font-weight: bolder;
@@ -352,6 +363,7 @@
   background-color: #007850;
 }
 .btn.pink {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   display: inline-block;
   color: white;
   font-weight: bolder;
@@ -366,6 +378,7 @@
   background-color: #b34444;
 }
 .btn.yellow {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   display: inline-block;
   color: white;
   font-weight: bolder;

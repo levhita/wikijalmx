@@ -2,7 +2,7 @@
 
 $context = [
 	'_TITLE' =>'Nosotras | Wikipólitica Jalisco',
-	'_CSS' => ['nosotras.css'],
+	'_CSS' => ['css/nosotras.css'],
 	'_ACTIVE' => 'nosotras',
 ];
 
