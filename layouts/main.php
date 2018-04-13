@@ -22,7 +22,7 @@
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto"></ul>
-			<ul class="navbar-nav mr-auto my-2 my-lg-0">
+			<ul class="navbar-nav ml-auto my-2 my-lg-0">
 				<li class="nav-item <?=($_ACTIVE=='inicio')?'active':''?>"><a  class="nav-link" href="/">Inicio</a></li>
 				<li class="nav-item <?=($_ACTIVE=='nosotras')?'active':''?>"><a  class="nav-link" href="nosotras.html">Nosotras</a></li>
 				<li class="nav-item <?=($_ACTIVE=='esenciales')?'active':''?>"><a class="nav-link" href="esenciales.html">Esenciales</a></li>
