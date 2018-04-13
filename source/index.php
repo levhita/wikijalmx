@@ -1,8 +1,8 @@
 <?php include("microfw.php");
 
 $context = [
-	'_TITLE' =>'Wikipólitica Jalisco',
-	'_CSS' => ['index.css'],
+	'_TITLE' =>'Inicio | Wikipólitica Jalisco',
+	'_CSS' => ['css/index.css'],
 	'_ACTIVE' => 'inicio',
 ];
 
@@ -14,7 +14,6 @@ render('main', $context, function($context){
 		<div class="container">
 			<h1>SOMOS<br>MUCHAS</h1>
 			<h1 class="white">Y YA NOS<br>ENCONTRAMOS</h1>
-
 		</div>
 	</section>
 	
@@ -185,11 +184,7 @@ render('main', $context, function($context){
 			</div>
 		</div>
 	</div>
-	
-	<section class="container" id="contacto">
-		<?php include('views/contact.php'); ?>
-	</section>
-	
+
 	<?php
 });
 ?>

@@ -102,13 +102,20 @@
   font-size: 70px;
   line-height: 0.9em;
 }
+#contacto .address {
+  padding: 20px;
+  background-color: #00bc94;
+  color: white;
+  border-radius: 1em;
+}
+#contacto .addressa,
+#contacto .address a {
+  color: white;
+}
 #mc_embed_signup {
   clear: left;
 }
 #mc-embedded-subscribe {
-  /*background-color: @hot_pink;
-	font-size: 1.5em;
-	font-weight: bolder;*/
   display: inline-block;
   border: none !important;
 }
