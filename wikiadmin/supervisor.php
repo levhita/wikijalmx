@@ -1,4 +1,5 @@
 <?php
+(PHP_SAPI !== 'cli' || isset($_SERVER['HTTP_USER_AGENT'])) && die('cli only');
 include('config.php');
 
 $seconds=2;

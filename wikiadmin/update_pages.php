@@ -1,14 +1,10 @@
 <?php
-$base_dir = "../../";
+include('config.php');
 $dynamics = ["publicaciones", "esenciales"];
-echo "<ol>\n";
 foreach($dynamics as $dynamic) {
 	ob_start();
-	include($base_dir."source/$dynamic.php");
+	include("source/$dynamic.php");
 	$content = ob_get_clean();
-	file_put_contents($base_dir."public/$dynamic.html", $content);
-	echo "<li><a href='$dynamic.html'>$dynamic.html</a> Updated!</li>";	
+	file_put_contents("$public_folder$dynamic.html", $content);
+	echo "$dynamic.html Updated!<br>";	
 }
-echo "</ol>";
-
-

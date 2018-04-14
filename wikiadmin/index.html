@@ -2,7 +2,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>VUE-CRUD-UI</title>
+  <title>Wiki Admin</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.6/vue.js"></script>
@@ -13,12 +13,16 @@
 </head>
 <body>
 
-<div class="container-fluid">
+<div class="container">
   <div class="row">
-    <div class="col-md-3">
-      <h3>Posts Admin</h3>
-    </div>
+    <h2>Wiki Admin</h2>
   </div>
+  <div class="row">
+    <a href="update_pages.php" class="btn btn-primary">Update Pages</a>
+  </div>
+</div>
+<hr>
+<div class="container-fluid">
   <main id="app">
     <div class="row">
       <menu-component v-if="definition!==null" :subjects="definition.tags"></menu-component>
