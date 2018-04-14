@@ -1,16 +1,18 @@
 <?php
-include("microfw.php");
-include("db.php");
+include_once('db.php');
+include_once('microfw.php');
+
+
 $context = [
 	'_TITLE' =>'Publicaciones | Wikipólitica Jalisco',
 	'_CSS' => ['css/publicaciones.css'],
 	'_ACTIVE' => 'publicaciones',
 ];
 
-	$Query = $Db->prepare("SELECT * from posts ORDER BY date DESC;");
-	$Query->execute();
-	$context['posts'] = $Query->fetchAll(PDO::FETCH_OBJ);
-	render('main', $context, function($context){
+$Query = $Db->prepare("SELECT * from posts ORDER BY date DESC;");
+$Query->execute();
+$context['posts'] = $Query->fetchAll(PDO::FETCH_OBJ);
+render('main', $context, function($context){
 	extract($context);
 	?>
 	<section id="inicio">

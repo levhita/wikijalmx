@@ -1,4 +1,5 @@
-<?php include("microfw.php");
+<?php
+include_once('microfw.php');
 
 $context = [
 	'_TITLE' =>'Proyectos | Wikipólitica Jalisco',

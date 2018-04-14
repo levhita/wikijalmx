@@ -1,4 +1,6 @@
 <?php
+include('config.php');
+
 $seconds=2;
 while(true)
 {
@@ -30,9 +32,10 @@ while(true)
 }
 
 function process($filename) {
+	global $public_folder;
 	$path_parts = pathinfo($filename);
 	echo "Processing $filename\n";
-	echo `php $filename > public/{$path_parts['filename']}.html`;
+	echo `php $filename > $public_folder{$path_parts['filename']}.html`;
 }
 
 function process_all() {

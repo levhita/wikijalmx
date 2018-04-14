@@ -1,7 +1,9 @@
-<?php include("microfw.php");
+<?php
+include_once('config.php');
+include_once("microfw.php");
 
 $context = [
-	'_TITLE' =>'Contacto | Wikipólitica Jalisco &gt; ',
+	'_TITLE' =>'Contacto | Wikipólitica Jalisco',
 	'_CSS' => ['https://cdn-images.mailchimp.com/embedcode/classic-10_7.css','css/contacto.css'],
 	'_ACTIVE' => 'contacto',
 ];

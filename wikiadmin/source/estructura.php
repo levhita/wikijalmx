@@ -1,4 +1,5 @@
-<?php include("microfw.php");
+<?php
+include("microfw.php");
 
 $context = [
 	'_TITLE' =>'Estructura | Wikipólitica Jalisco',

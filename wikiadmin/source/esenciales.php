@@ -1,6 +1,7 @@
 <?php
-include("microfw.php");
-include("db.php");
+include_once('db.php');
+include_once('microfw.php');
+
 $context = [
 	'_TITLE' =>'Esenciales | Wikipólitica Jalisco',
 	'_CSS' => ['css/esenciales.css'],

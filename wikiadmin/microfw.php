@@ -1,10 +1,12 @@
 <?php
 function render($layout, $context, $content_function) {
+	global $base_dir;
+	if(!isset($base_dir)){$base_dir='./';}
 	ob_start();
 	$content_function($context);
 	$content = ob_get_clean();
 	$context['_CONTENT'] = $content;
-	include("layouts/$layout.php");
+	include($base_dir . "layouts/$layout.php");
 }
 
 function css($csss){

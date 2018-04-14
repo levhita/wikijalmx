@@ -1,5 +1,4 @@
-<?php extract($context) ?>
-<!DOCTYPE html>
+<?php extract($context) ?><!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
