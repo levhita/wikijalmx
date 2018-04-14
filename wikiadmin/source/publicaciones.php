@@ -31,13 +31,13 @@ render('main', $context, function($context){
 				<?php foreach($posts as $post): ?>
 					<div class="col-lg-4 col-md-6">
 						<div class="card">
-							<img class="card-img-top" src="<?=$post->img?>" alt="<?=htmlentities($post->author)?>">
+							<img class="card-img-top" src="<?=$post->img?>" alt="<?=htmlspecialchars($post->author)?>">
 							<div class="card-body">
-								<h5 class="card-title"><?=htmlentities($post->title)?></h5>
-								<p class="card-text"><?=htmlentities($post->abstract)?></p>
+								<h5 class="card-title"><?=htmlspecialchars($post->title)?></h5>
+								<p class="card-text"><?=htmlspecialchars($post->abstract)?></p>
 							</div>
 							<div class="card-footer">
-								<div class="small" style="float:left"><strong><?=htmlentities($post->author)?></strong><br><?=$post->date?></div>
+								<div class="small" style="float:left"><strong><?=htmlspecialchars($post->author)?></strong><br><?=$post->date?></div>
 								<div class="right"><a target="_blank" href="<?=$post->url?>" class="btn hot_pink" title="¡Ay que ler!">Leer</a></div>
 							</div>
 						</div>
