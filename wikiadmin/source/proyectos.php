@@ -1,4 +1,5 @@
 <?php
+include_once('db.php');
 include_once('microfw.php');
 
 $context = [
@@ -6,6 +7,10 @@ $context = [
 	'_CSS' => ['css/index.css'],
 	'_ACTIVE' => 'proyectos',
 ];
+
+$Query = $Db->prepare("SELECT * from projects ORDER BY `order` ASC;");
+$Query->execute();
+$context['projects'] = $Query->fetchAll(PDO::FETCH_OBJ);
 
 render('main', $context, function($context){
 	extract($context);
@@ -35,45 +40,20 @@ render('main', $context, function($context){
 	
 	<div class="container-fluid" id="lista_proyectos">
 		<div class="row">
-			<div class="col-lg" id="sinvoto">
-				<a class="overlay" href="#">
-					<h2>#SinVotoNoHayDinero</h2>
-					<p>Conoce el Proyecto</p>
-				</a>
-			</div>
-			<div class="col-lg" id="informe">
-				<a class="overlay" href="#">
-					<h2>#InformeBajoLaLupa</h2>
-					<p>Conoce el Proyecto</p>
-				</a>
-			</div>
-			<div class="col-lg" id="observatorio">
-				<a class="overlay" href="#">
-					<h2>Observatorio CEDHJ- SEA</h2>
-					<p>Conoce el Proyecto</p>
-				</a>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-lg" id="ocupacion">
-				<a class="overlay" href="#">
-					<h2>Festival "La Ocupación"</h2>
-					<p>Conoce el Proyecto</p>
-				</a>
-			</div>
-			<div class="col-lg" id="presupuesto">
-				<a class="overlay" href="#">
-					<h2>#NuestroPresupuesto</h2>
-					<p>Conoce el Proyecto</p>
-				</a>
-			</div>
-			<div class="col-lg" id="var">
-				<a class="overlay" href="#">
-					<h2>#VamosAReemplazarles</h2>
-					<p>Conoce el Proyecto</p>
-				</a>
-			</div>
+			<?php foreach($projects as $project): ?>
+				<div class="col-lg-4 col-md-6">
+					<div class="card">
+						<img class="card-img-top" src="<?=$project->img?>">
+						<div class="card-body">
+							<h5 class="card-title"><?=htmlspecialchars($project->title)?></h5>
+							<p class="card-text"><?=htmlspecialchars($project->abstract)?></p>
+						</div>
+						<div class="card-footer">
+							<div class="right"><a target="_blank" href="<?=$project->url?>" class="btn hot_pink" title="¡Ay que ler!">Sitio</a></div>
+						</div>
+					</div>
+				</div>
+			<?php endforeach; ?>
 		</div>
 	</div>
 	

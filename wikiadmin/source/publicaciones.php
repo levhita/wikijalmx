@@ -12,6 +12,7 @@ $context = [
 $Query = $Db->prepare("SELECT * from posts ORDER BY date DESC;");
 $Query->execute();
 $context['posts'] = $Query->fetchAll(PDO::FETCH_OBJ);
+
 render('main', $context, function($context){
 	extract($context);
 	?>

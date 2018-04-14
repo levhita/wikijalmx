@@ -1,6 +1,6 @@
 <?php
 include('config.php');
-$dynamics = ["publicaciones", "esenciales"];
+$dynamics = ["publicaciones", "esenciales", "proyectos"];
 foreach($dynamics as $dynamic) {
 	ob_start();
 	include("source/$dynamic.php");
