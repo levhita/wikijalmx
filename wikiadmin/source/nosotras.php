@@ -22,15 +22,16 @@ render('main', $context, function($context){
 			<p>Formamos parte de la red nacional <strong>Wikipólitica MX</strong>.</p>
 			<br><br><br>
 			<div class="row">
+				zdiv class="col center">
+					<a class="btn hot_green" href="#participar">¿Cómo ser parte?</a>
+				</div>
 				<div class="col center">
 					<a class="btn hot_pink" href="#que">¿En qué creemos?</a>
 				</div>
 				<div class="col center">
-					<a class="btn hot_yellow" href="#historia">Un poco de historia</a>
+					<a class="btn hot_yellow" href="#historia">Nuestra Historia</a>
 				</div>
-				<div class="col center">
-					<a class="btn hot_green" href="#participar">¿Cómo ser parte?</a>
-				</div>
+
 			</div>
 
 
@@ -99,7 +100,7 @@ render('main', $context, function($context){
 	<section id="historia">
 		<div class="container">
 
-			<h1>UN POCO<br>DE HISTORIA...</h1>
+			<h1>NUESTRA<br>HISTORIA</h1>
 			<p>Wikipolítica nace como organización en verano de 2014. Sus inicios se remontan a la efervescencia política vivida durante el 2012 y los primeros intentos que le siguieron para articular el descontento hacia una nueva política que nos hiciera sentido. A continuación presentamos una línea del tiempo sobre Wikipolítica Jalisco y sus antecedentes.</p>
 			<div id="historyCarousel" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">

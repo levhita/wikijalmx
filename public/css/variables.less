@@ -51,10 +51,9 @@
 	display:inline-block;
 	color: white;
 	font-weight: bolder;
-	box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
-
 	font-size: 1.3em;
 	background-color: @color;
+	
 	&:hover {
 		background-color: @color - @darker;
 	}
@@ -63,26 +62,42 @@
 
 .btn {
 	
-	&.green {
-		.button(@green);
-	}
+	&.green { .button(@green); }
 
-	&.pink {
-		.button(@pink);
-	}
+	&.pink { .button(@pink); }
 
-	&.yellow {
-		.button(@yellow)
-	}
-	&.hot_green {
-		.button(@hot_green);
-	}
+	&.yellow { .button(@yellow) }
+	&.hot_green {.button(@hot_green);}
 
-	&.hot_pink {
-		.button(@hot_pink);
-	}
+	&.hot_pink {.button(@hot_pink); }
 
-	&.hot_yellow {
-		.button(@hot_yellow)
+	&.hot_yellow {.button(@hot_yellow)}
+}
+
+.text_border(@color){
+	text-shadow:
+	-1px -1px 0 @color,  
+	1px -1px 0 @color,
+	-1px 1px 0 @color,
+	1px 1px 0 @color;
+}
+
+.inverted(@color, @background) {
+	padding: 0em 0.5em;
+
+	background-color: @background;
+	transition: background-color 0.5s;
+
+	color: @color;
+	transition: color 0.5s;
+
+	&:hover {
+		text-decoration: none;
+
+		background-color:  @color;
+		transition: background-color 0.5s;
+
+		color:@background ;
+		transition: color 0.5s;
 	}
 }

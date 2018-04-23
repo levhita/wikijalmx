@@ -10,7 +10,17 @@ function render($layout, $context, $content_function) {
 }
 
 function css($csss){
-	foreach ($csss AS $css) {
-		echo '<link rel="stylesheet" href="'.$css.'">';
+	if (isset($csss) && is_array($csss)) {
+		foreach ($csss AS $css) {
+			echo '<link rel="stylesheet" href="'.$css.'">';
+		}
+	}
+}
+
+function js($jss){
+	if (isset($jss) && is_array($jss)) {
+		foreach ($jss AS $js) {
+			echo '<script type="application/javascript" src="'.$js.'"></script>';
+		}
 	}
 }
