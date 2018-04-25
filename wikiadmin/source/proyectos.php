@@ -58,7 +58,7 @@ render('main', $context, function($context){
 							</div>
 							<?php if(!empty($project->url)):?>
 								<div class="card-footer">
-									<div class="right"><a target="_blank" href="<?=$project->url?>" class="btn hot_pink" title="¡Ay que ler!">Sitio</a></div>
+									<div class="right"><a target="_blank" href="<?=$project->url?>" class="btn pink" title="¡Ay que ler!">Sitio</a></div>
 								</div>
 							<?php endif;?>
 						</div>
@@ -85,7 +85,7 @@ render('main', $context, function($context){
 							</div>
 							<?php if(!empty($project->url)):?>
 								<div class="card-footer">
-									<div class="right"><a target="_blank" href="<?=$project->url?>" class="btn hot_pink" title="¡Ay que ler!">Sitio</a></div>
+									<div class="right"><a target="_blank" href="<?=$project->url?>" class="btn pink" title="¡Ay que ler!">Sitio</a></div>
 								</div>
 							<?php endif;?>
 						</div>

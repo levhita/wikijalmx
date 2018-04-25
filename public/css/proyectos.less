@@ -3,16 +3,23 @@
 
 #proyectos {
 	.section;
-	
+	h1 {
+		.text_border(@black);
+	}
+	background-color: @lighter;
 	.descarga {
 		padding: 20px;
-		background-color:  #EEE; 
+		background-color: @back;
+		color: white;
 		.center;
 	}
 }
 #active {
 	.section;
-	//background-color: @back;
+	h1 {
+		.text_border(@black);
+	}
+	color: @black;
 	.card {
 		margin-bottom:1em;
 	}
@@ -20,7 +27,10 @@
 
 #archive {
 	.section;
-	//background-color: @back;
+	background-color: @lighter;
+	h1 {
+		.text_border(@black);
+	}
 	.card {
 		margin-bottom:1em;
 	}

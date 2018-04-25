@@ -1,0 +1,64 @@
+@import "variables.less";
+
+#estructura {
+	.section;
+	h1 {
+		.text_border(@black);
+	}
+	.otros{
+		padding: 20px;
+		background-color: @back; 
+		color: white;
+		a {
+			color:white;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+#estructura_detalle {
+	/*background-color: @green;
+	color:white;*/
+}
+
+.estructura {
+	padding: 3em;
+	position:relative;
+	& > h1 {
+		text-transform: uppercase;
+		.text_border(@black);
+	}
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: 10em 10em;
+
+	button {
+		position: absolute;
+		bottom:1em;
+		right: 1em;
+	}
+}
+#asamblea_local {
+	background-color: @green;
+	background-image: url('../images/asamblea_local.png');
+}
+
+#equipo_ejecutivo {
+	background-color: @yellow;
+	background-image: url('../images/equipo_ejecutivo.png');
+}
+
+#consejo_politico {
+	background-color: @pink;
+	background-image: url('../images/consejo_politico.png');
+}
+
+	
+#consejo_vigilancia {
+	background-color: @blue;
+	background-image: url('../images/consejo_vigilancia.png');
+}
+

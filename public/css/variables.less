@@ -1,15 +1,33 @@
-@green: #00bc94;
-@hot_green: #00e4c1;
+@purple: #831f99;
+@hot_purple: #690eaa;
+@washed_purple: #9765ba;
 
-@pink: #f78888;
-@hot_pink: #ff2665;
+@green: #5ce6cf;
+@hot_green: #1dd4d7;
+@washed_green: #95c5c6;
 
-@yellow: rgba(219, 214, 123, 1);
-@hot_yellow: #ffcf48;
+@pink: #ff3378;
+@hot_pink: #e11762;
+@whased_pink: #d287a3;
+
+@yellow: #fed500;
+@hot_yellow: #ffaf00;
+@whased_yellow: #e2c585;
+
+@hot_blue: #0050e4;
+@blue: #0b72d9;
+@whashed_blue: #6d94de;
+
+
+
+
+@black: #2e3436;
+@grey: #555753;
+@light: #888a85;
+@lighter: #eeeeec;
+@back: @black;
 
 @darker: #444;
-
-@back: rgba(47, 46, 46, 1);
 @spacer: 60px;
 
 .center {
@@ -61,17 +79,15 @@
 
 
 .btn {
-	
+	&.purple { .button(@purple); }
+	&.blue { .button(@blue); }
 	&.green { .button(@green); }
-
 	&.pink { .button(@pink); }
-
 	&.yellow { .button(@yellow) }
-	&.hot_green {.button(@hot_green);}
-
+	
+	/*&.hot_green {.button(@hot_green);}
 	&.hot_pink {.button(@hot_pink); }
-
-	&.hot_yellow {.button(@hot_yellow)}
+	&.hot_yellow {.button(@hot_yellow)}*/
 }
 
 .text_border(@color){
