@@ -3,7 +3,8 @@ include("microfw.php");
 
 $context = [
 	'_TITLE' =>'Principios y Valores | Wikipólitica Jalisco',
-	'_CSS' => ['principios_valores.css'],
+	'_CSS' => ['css/principios_valores.css'],
+	'_JS' => [],
 	'_ACTIVE' => 'principios_valores',
 ];
 
@@ -11,7 +12,7 @@ render('main', $context, function($context){
 	extract($context);
 	?>
 	
-	<section id="principios" class="section">
+	<section id="principios">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg">

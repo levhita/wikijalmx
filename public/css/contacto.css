@@ -19,78 +19,67 @@
 .section h1 {
   font-weight: bolder;
   font-size: 70px;
-  line-height: 0.9em;
+  line-height: 1.1em;
 }
 .big_title {
   font-weight: bolder;
   font-size: 70px;
-  line-height: 0.9em;
+  line-height: 1.1em;
+}
+.btn.purple {
+  display: inline-block;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.3em;
+  background-color: #831f99;
+  transition: all 100ms;
+}
+.btn.purple:hover {
+  transform: scale(1.2);
+}
+.btn.blue {
+  display: inline-block;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.3em;
+  background-color: #0b72d9;
+  transition: all 100ms;
+}
+.btn.blue:hover {
+  transform: scale(1.2);
 }
 .btn.green {
   display: inline-block;
   color: white;
   font-weight: bolder;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   font-size: 1.3em;
-  background-color: #00bc94;
+  background-color: #5ce6cf;
+  transition: all 100ms;
 }
 .btn.green:hover {
-  background-color: #007850;
+  transform: scale(1.2);
 }
 .btn.pink {
   display: inline-block;
   color: white;
   font-weight: bolder;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   font-size: 1.3em;
-  background-color: #f78888;
+  background-color: #ff3378;
+  transition: all 100ms;
 }
 .btn.pink:hover {
-  background-color: #b34444;
+  transform: scale(1.2);
 }
 .btn.yellow {
   display: inline-block;
   color: white;
   font-weight: bolder;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   font-size: 1.3em;
-  background-color: #dbd67b;
+  background-color: #fed500;
+  transition: all 100ms;
 }
 .btn.yellow:hover {
-  background-color: #979237;
-}
-.btn.hot_green {
-  display: inline-block;
-  color: white;
-  font-weight: bolder;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-  font-size: 1.3em;
-  background-color: #00e4c1;
-}
-.btn.hot_green:hover {
-  background-color: #00a07d;
-}
-.btn.hot_pink {
-  display: inline-block;
-  color: white;
-  font-weight: bolder;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-  font-size: 1.3em;
-  background-color: #ff2665;
-}
-.btn.hot_pink:hover {
-  background-color: #bb0021;
-}
-.btn.hot_yellow {
-  display: inline-block;
-  color: white;
-  font-weight: bolder;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-  font-size: 1.3em;
-  background-color: #ffcf48;
-}
-.btn.hot_yellow:hover {
-  background-color: #bb8b04;
+  transform: scale(1.2);
 }
 #contacto {
   padding: 100px 0px 100px 0px;
@@ -100,17 +89,20 @@
 #contacto h1 {
   font-weight: bolder;
   font-size: 70px;
-  line-height: 0.9em;
+  line-height: 1.1em;
 }
 #contacto .address {
   padding: 20px;
-  background-color: #00bc94;
+  background-color: #0b72d9;
   color: white;
   border-radius: 1em;
 }
 #contacto .addressa,
 #contacto .address a {
   color: white;
+}
+#contacto h1 {
+  text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 1px 1px 0 #222;
 }
 #mc_embed_signup {
   clear: left;

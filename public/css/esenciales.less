@@ -6,7 +6,10 @@
 	color:white;
 	h2 {
 		font-size: 3em;
+
+		.text_border(white);
 	}
+	
 	p {
 		margin-top:.5em;
 		font-size: 1.5em;
@@ -14,9 +17,17 @@
 		font-family: 'Raleway', sans-serif;
 		text-transform: uppercase;
 	}
+	
+	h1 {
+		.text_border(white);
+	}
 }
 
-#publicaciones { .section; }
+#publicaciones { .section; 
+	h1 {
+		.text_border(@black);
+	}
+}
 
 .card {
 	margin-bottom: 20px;

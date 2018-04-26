@@ -4,6 +4,7 @@ include_once("microfw.php");
 $context = [
 	'_TITLE' =>'Contacto | Wikipólitica Jalisco',
 	'_CSS' => ['https://cdn-images.mailchimp.com/embedcode/classic-10_7.css','css/contacto.css'],
+	'_JS' => [],
 	'_ACTIVE' => 'contacto',
 ];
 
@@ -56,7 +57,7 @@ render('main', $context, function($context){
 						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7b4730781d5dffa0dcb5beaa1_8509c83eea" tabindex="-1" value=""></div>
 
 						<div class="right" style="padding-right:23px">
-							<input type="submit" value="Suscribirme" name="subscribe" id="mc-embedded-subscribe" class="btn hot_pink">
+							<input type="submit" value="Suscribirme" name="subscribe" id="mc-embedded-subscribe" class="btn pink">
 						</div>
 
 

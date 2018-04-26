@@ -6,6 +6,7 @@ include_once('microfw.php');
 $context = [
 	'_TITLE' =>'Publicaciones | Wikipólitica Jalisco',
 	'_CSS' => ['css/publicaciones.css'],
+	'_JS' => [],
 	'_ACTIVE' => 'publicaciones',
 ];
 
@@ -39,7 +40,7 @@ render('main', $context, function($context){
 							</div>
 							<div class="card-footer">
 								<div class="small" style="float:left"><strong><?=htmlspecialchars($post->author)?></strong><br><?=$post->date?></div>
-								<div class="right"><a target="_blank" href="<?=$post->url?>" class="btn hot_pink" title="¡Ay que ler!">Leer</a></div>
+								<div class="right"><a target="_blank" href="<?=$post->url?>" class="btn pink" title="¡Ay que ler!">Leer</a></div>
 							</div>
 						</div>
 					</div>

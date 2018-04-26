@@ -5,6 +5,7 @@ include_once('microfw.php');
 $context = [
 	'_TITLE' =>'Proyectos | Wikipólitica Jalisco',
 	'_CSS' => ['css/proyectos.css'],
+	'_JS' => [],
 	'_ACTIVE' => 'proyectos',
 ];
 
@@ -37,7 +38,7 @@ render('main', $context, function($context){
 						¿Tienes una idea?<br>
 						Conoce la "Guía para la generación de proyectos".
 					</p>
-					<a class="btn yellow" href="https://docs.google.com/document/d/11kY6WkmQFAQr22FohlOGIeg-0IfHL4K7_2bWGQ6aOZ4/edit?usp=sharing">Enlace de Descarga</a>
+					<a class="btn pink" href="https://docs.google.com/document/d/11kY6WkmQFAQr22FohlOGIeg-0IfHL4K7_2bWGQ6aOZ4/edit?usp=sharing">Enlace de Descarga</a>
 				</div>
 			</div>
 		</div>

@@ -19,17 +19,12 @@
 .section h1 {
   font-weight: bolder;
   font-size: 70px;
-  line-height: 0.9em;
+  line-height: 1.1em;
 }
 .big_title {
   font-weight: bolder;
   font-size: 70px;
-  line-height: 0.9em;
-}
-.btn {
-  /*&.hot_green {.button(@hot_green);}
-	&.hot_pink {.button(@hot_pink); }
-	&.hot_yellow {.button(@hot_yellow)}*/
+  line-height: 1.1em;
 }
 .btn.purple {
   display: inline-block;
@@ -37,9 +32,10 @@
   font-weight: bolder;
   font-size: 1.3em;
   background-color: #831f99;
+  transition: all 100ms;
 }
 .btn.purple:hover {
-  background-color: #3f0055;
+  transform: scale(1.2);
 }
 .btn.blue {
   display: inline-block;
@@ -47,9 +43,10 @@
   font-weight: bolder;
   font-size: 1.3em;
   background-color: #0b72d9;
+  transition: all 100ms;
 }
 .btn.blue:hover {
-  background-color: #002e95;
+  transform: scale(1.2);
 }
 .btn.green {
   display: inline-block;
@@ -57,9 +54,10 @@
   font-weight: bolder;
   font-size: 1.3em;
   background-color: #5ce6cf;
+  transition: all 100ms;
 }
 .btn.green:hover {
-  background-color: #18a28b;
+  transform: scale(1.2);
 }
 .btn.pink {
   display: inline-block;
@@ -67,9 +65,10 @@
   font-weight: bolder;
   font-size: 1.3em;
   background-color: #ff3378;
+  transition: all 100ms;
 }
 .btn.pink:hover {
-  background-color: #bb0034;
+  transform: scale(1.2);
 }
 .btn.yellow {
   display: inline-block;
@@ -77,38 +76,35 @@
   font-weight: bolder;
   font-size: 1.3em;
   background-color: #fed500;
+  transition: all 100ms;
 }
 .btn.yellow:hover {
-  background-color: #ba9100;
+  transform: scale(1.2);
 }
-#estructura {
+#inicio {
   padding: 100px 0px 100px 0px;
   background-size: cover;
   background-attachment: fixed;
 }
-#estructura h1 {
+#inicio h1 {
   font-weight: bolder;
   font-size: 70px;
-  line-height: 0.9em;
+  line-height: 1.1em;
 }
-#estructura h1 {
-  text-shadow: -1px -1px 0 #2e3436, 1px -1px 0 #2e3436, -1px 1px 0 #2e3436, 1px 1px 0 #2e3436;
+#inicio h1 {
+  text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 1px 1px 0 #222;
 }
-#estructura .otros {
-  padding: 20px;
-  background-color: #2e3436;
+#inicio .otros {
+  padding: 2em;
+  background-color: #222;
   color: white;
 }
-#estructura .otros a {
+#inicio .otros a {
   color: white;
   text-decoration: none;
 }
-#estructura .otros a:hover {
+#inicio .otros a:hover {
   text-decoration: underline;
-}
-#estructura_detalle {
-  /*background-color: @green;
-	color:white;*/
 }
 .estructura {
   padding: 3em;
@@ -119,7 +115,7 @@
 }
 .estructura > h1 {
   text-transform: uppercase;
-  text-shadow: -1px -1px 0 #2e3436, 1px -1px 0 #2e3436, -1px 1px 0 #2e3436, 1px 1px 0 #2e3436;
+  text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 1px 1px 0 #222;
 }
 .estructura button {
   position: absolute;
@@ -141,5 +137,8 @@
 #consejo_vigilancia {
   background-color: #0b72d9;
   background-image: url('../images/consejo_vigilancia.png');
+}
+.modal .table a {
+  color: #222;
 }
 /*# sourceMappingURL=estructura.css.map */

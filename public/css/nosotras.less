@@ -2,40 +2,81 @@
 
 #inicio {
 	.section;
-	background-image: url('../images/backgrounds/asamblea_3.jpg');
-	.white;
+	background-image: url('../images/backgrounds/asamblea_1.jpg');
+	color:@black;
+	a.inverted {
+		.inverted(white, @black);
+	}
+	h1 {
+		.text_border(@black);
+	}
+		.btn{
+		margin-top: 1em;
+	}
 }
-#porque { .section; }
+
+#porque {
+	.section; 
+	h1 {
+		.text_border(@black);
+	}
+}
 
 #que {
 	.section;
 	background-color: @pink;
 	.white;
-	a.reverse {
-		color: @pink;
-		background-color: rgba(255,255,255, 1);
-		font-weight: bolder;
-		&:hover {
-			text-decoration: none;
-					background-color: rgba(255,255,255, 0.8);
-					transition: background-color 0.5s;
-		}
+
+	
+	a.inverted {
+		.inverted(@pink, white);
 	}
+	
+	h1 {
+		.text_border(white);
+	}
+	
 }
 
 #historia {
 	.section;
 	.white;
 	background-color: @back;
+	h1 {
+		.text_border(white);
+	}
+	.carousel-control-next-icon {
+		color:blue;
+		width:40px;
+		height:40px;
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+	}
+	.carousel-control-prev-icon {
+		color:blue;
+		width:40px;
+		height:40px;
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+	}
 }
 
 #participar {
 	.section;
+	h1 {
+		.text_border(@black);
+	}
 	.reverse {
 		color:white;
-		background-color: @green;
+		background-color: @hot_green;
 		padding: 20px;
 		font-size: 1.3em;
 	}
+	
+}
+#discutimos {
+	.section;
+	h1 {
+		.text_border(@black);
+	}
+	background-color:@lighter;
 }
 

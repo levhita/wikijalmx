@@ -19,17 +19,12 @@
 .section h1 {
   font-weight: bolder;
   font-size: 70px;
-  line-height: 0.9em;
+  line-height: 1.1em;
 }
 .big_title {
   font-weight: bolder;
   font-size: 70px;
-  line-height: 0.9em;
-}
-.btn {
-  /*&.hot_green {.button(@hot_green);}
-	&.hot_pink {.button(@hot_pink); }
-	&.hot_yellow {.button(@hot_yellow)}*/
+  line-height: 1.1em;
 }
 .btn.purple {
   display: inline-block;
@@ -37,9 +32,10 @@
   font-weight: bolder;
   font-size: 1.3em;
   background-color: #831f99;
+  transition: all 100ms;
 }
 .btn.purple:hover {
-  background-color: #3f0055;
+  transform: scale(1.2);
 }
 .btn.blue {
   display: inline-block;
@@ -47,9 +43,10 @@
   font-weight: bolder;
   font-size: 1.3em;
   background-color: #0b72d9;
+  transition: all 100ms;
 }
 .btn.blue:hover {
-  background-color: #002e95;
+  transform: scale(1.2);
 }
 .btn.green {
   display: inline-block;
@@ -57,9 +54,10 @@
   font-weight: bolder;
   font-size: 1.3em;
   background-color: #5ce6cf;
+  transition: all 100ms;
 }
 .btn.green:hover {
-  background-color: #18a28b;
+  transform: scale(1.2);
 }
 .btn.pink {
   display: inline-block;
@@ -67,9 +65,10 @@
   font-weight: bolder;
   font-size: 1.3em;
   background-color: #ff3378;
+  transition: all 100ms;
 }
 .btn.pink:hover {
-  background-color: #bb0034;
+  transform: scale(1.2);
 }
 .btn.yellow {
   display: inline-block;
@@ -77,43 +76,45 @@
   font-weight: bolder;
   font-size: 1.3em;
   background-color: #fed500;
+  transition: all 100ms;
 }
 .btn.yellow:hover {
-  background-color: #ba9100;
+  transform: scale(1.2);
 }
 #proyectos {
   padding: 100px 0px 100px 0px;
   background-size: cover;
   background-attachment: fixed;
-  background-color: #eeeeec;
+  color: white;
+  background-image: url('../images/backgrounds/asamblea_3.jpg');
 }
 #proyectos h1 {
   font-weight: bolder;
   font-size: 70px;
-  line-height: 0.9em;
+  line-height: 1.1em;
 }
 #proyectos h1 {
-  text-shadow: -1px -1px 0 #2e3436, 1px -1px 0 #2e3436, -1px 1px 0 #2e3436, 1px 1px 0 #2e3436;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 }
 #proyectos .descarga {
   padding: 20px;
-  background-color: #2e3436;
-  color: white;
+  background-color: white;
+  color: #222;
   text-align: center;
 }
 #active {
   padding: 100px 0px 100px 0px;
   background-size: cover;
   background-attachment: fixed;
-  color: #2e3436;
+  color: #222;
 }
 #active h1 {
   font-weight: bolder;
   font-size: 70px;
-  line-height: 0.9em;
+  line-height: 1.1em;
 }
 #active h1 {
-  text-shadow: -1px -1px 0 #2e3436, 1px -1px 0 #2e3436, -1px 1px 0 #2e3436, 1px 1px 0 #2e3436;
+  text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 1px 1px 0 #222;
 }
 #active .card {
   margin-bottom: 1em;
@@ -122,15 +123,15 @@
   padding: 100px 0px 100px 0px;
   background-size: cover;
   background-attachment: fixed;
-  background-color: #eeeeec;
+  background-color: #eee;
 }
 #archive h1 {
   font-weight: bolder;
   font-size: 70px;
-  line-height: 0.9em;
+  line-height: 1.1em;
 }
 #archive h1 {
-  text-shadow: -1px -1px 0 #2e3436, 1px -1px 0 #2e3436, -1px 1px 0 #2e3436, 1px 1px 0 #2e3436;
+  text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 1px 1px 0 #222;
 }
 #archive .card {
   margin-bottom: 1em;

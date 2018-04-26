@@ -26,37 +26,34 @@
 .section h1 {
   font-weight: bolder;
   font-size: 70px;
-  line-height: 0.9em;
+  line-height: 1.1em;
 }
 .big_title {
   font-weight: bolder;
   font-size: 70px;
-  line-height: 0.9em;
+  line-height: 1.1em;
 }
-.btn {
-  /*&.hot_green {.button(@hot_green);}
-	&.hot_pink {.button(@hot_pink); }
-	&.hot_yellow {.button(@hot_yellow)}*/
-}
-.btn.green {
+.btn.purple {
   display: inline-block;
   color: white;
   font-weight: bolder;
   font-size: 1.3em;
   background-color: #831f99;
+  transition: all 100ms;
 }
-.btn.green:hover {
-  background-color: #3f0055;
+.btn.purple:hover {
+  transform: scale(1.2);
 }
-.btn.green {
+.btn.blue {
   display: inline-block;
   color: white;
   font-weight: bolder;
   font-size: 1.3em;
   background-color: #0b72d9;
+  transition: all 100ms;
 }
-.btn.green:hover {
-  background-color: #002e95;
+.btn.blue:hover {
+  transform: scale(1.2);
 }
 .btn.green {
   display: inline-block;
@@ -64,9 +61,10 @@
   font-weight: bolder;
   font-size: 1.3em;
   background-color: #5ce6cf;
+  transition: all 100ms;
 }
 .btn.green:hover {
-  background-color: #18a28b;
+  transform: scale(1.2);
 }
 .btn.pink {
   display: inline-block;
@@ -74,9 +72,10 @@
   font-weight: bolder;
   font-size: 1.3em;
   background-color: #ff3378;
+  transition: all 100ms;
 }
 .btn.pink:hover {
-  background-color: #bb0034;
+  transform: scale(1.2);
 }
 .btn.yellow {
   display: inline-block;
@@ -84,9 +83,10 @@
   font-weight: bolder;
   font-size: 1.3em;
   background-color: #fed500;
+  transition: all 100ms;
 }
 .btn.yellow:hover {
-  background-color: #ba9100;
+  transform: scale(1.2);
 }
 h1,
 h2,
@@ -98,7 +98,7 @@ h5 {
 }
 .navbar {
   z-index: 100;
-  background-color: #2e3436;
+  background-color: #222;
   position: fixed;
   width: 100%;
   top: 0px;
@@ -108,7 +108,7 @@ h5 {
   height: 50px;
 }
 #footer_container {
-  background-color: #2e3436;
+  background-color: #222;
 }
 footer {
   color: white;

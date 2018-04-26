@@ -57,15 +57,15 @@ render('main', $context, function($context){
 	extract($context);
 	?>
 
-	<section class="container" id="estructura">
+	<section class="container" id="inicio">
 		<div class="row">
-			<div class="col-lg-8">
+			<div class="col-md-8">
 				<h1>NODO<br>JALISCO</h1>
 				<p>Wikipolítica MX es una red que se conforma por Nodos, mismos que tienen facultades para organizarse localmente.</p>
 
 				<p>En nuestra Entidad, lo hacemos de conformidad con nuestro Reglamento y siempre en constante apego a los principios, valores e identidad de la Red Nacional, de ésta manera, promovemos la agenda, proyectos, y objetivos particulares que decidimos, de manera colectiva, desarrollar entre los que integramos esta comunidad en el Estado de Jalisco.</p>
 			</div>
-			<div class="col-lg-4 otros">
+			<div class="col-md-4 otros">
 				<div class="center"><img src="images/icons/location.png" alt="location"/></div>
 				<p class="center">Estamos también en 9 Estados del país:</p>
 				<ul>
@@ -143,7 +143,10 @@ render('main', $context, function($context){
 					</button>
 				</div>
 				<div class="modal-body">
-					<p>Ésta lista está conformada por 96 miembros al día de hoy(pero cambía en todo momento dependiendo de las temperaturas de participación), se está compilando la información para su presentación.</p>
+					<div class="alert alert-secondary" role="alert">
+						<strong>Nota:</strong> Ésta lista está conformada por 96 miembros al día de hoy(pero cambía en todo momento dependiendo de las temperaturas de participación), se está compilando la información para su presentación.
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -186,7 +189,7 @@ render('main', $context, function($context){
 					</button>
 				</div>
 				<div class="modal-body">
-					<table class="table table-borderless table-striped">
+					<table class="table table-striped">
 						<thead><th>Nombre</th><th>Correo Electrónico</th><th>Twitter</th></thead>
 						<tbody>
 							<?php foreach($consejo_vigilancia AS $miembro):?>
@@ -214,7 +217,7 @@ render('main', $context, function($context){
 					</button>
 				</div>
 				<div class="modal-body">
-					<table class="table table-borderless table-striped">
+					<table class="table table-striped">
 						<thead><th>Nombre</th><th>Correo Electrónico</th><th>Twitter</th></thead>
 						<tbody>
 							<?php foreach($consejo_politico AS $miembro):?>

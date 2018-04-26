@@ -19,94 +19,97 @@
 .section h1 {
   font-weight: bolder;
   font-size: 70px;
-  line-height: 0.9em;
+  line-height: 1.1em;
 }
 .big_title {
   font-weight: bolder;
   font-size: 70px;
-  line-height: 0.9em;
+  line-height: 1.1em;
+}
+.btn.purple {
+  display: inline-block;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.3em;
+  background-color: #831f99;
+  transition: all 100ms;
+}
+.btn.purple:hover {
+  transform: scale(1.2);
+}
+.btn.blue {
+  display: inline-block;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.3em;
+  background-color: #0b72d9;
+  transition: all 100ms;
+}
+.btn.blue:hover {
+  transform: scale(1.2);
 }
 .btn.green {
   display: inline-block;
   color: white;
   font-weight: bolder;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   font-size: 1.3em;
-  background-color: #00bc94;
+  background-color: #5ce6cf;
+  transition: all 100ms;
 }
 .btn.green:hover {
-  background-color: #007850;
+  transform: scale(1.2);
 }
 .btn.pink {
   display: inline-block;
   color: white;
   font-weight: bolder;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   font-size: 1.3em;
-  background-color: #f78888;
+  background-color: #ff3378;
+  transition: all 100ms;
 }
 .btn.pink:hover {
-  background-color: #b34444;
+  transform: scale(1.2);
 }
 .btn.yellow {
   display: inline-block;
   color: white;
   font-weight: bolder;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   font-size: 1.3em;
-  background-color: #dbd67b;
+  background-color: #fed500;
+  transition: all 100ms;
 }
 .btn.yellow:hover {
-  background-color: #979237;
-}
-.btn.hot_green {
-  display: inline-block;
-  color: white;
-  font-weight: bolder;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-  font-size: 1.3em;
-  background-color: #00e4c1;
-}
-.btn.hot_green:hover {
-  background-color: #00a07d;
-}
-.btn.hot_pink {
-  display: inline-block;
-  color: white;
-  font-weight: bolder;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-  font-size: 1.3em;
-  background-color: #ff2665;
-}
-.btn.hot_pink:hover {
-  background-color: #bb0021;
-}
-.btn.hot_yellow {
-  display: inline-block;
-  color: white;
-  font-weight: bolder;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-  font-size: 1.3em;
-  background-color: #ffcf48;
-}
-.btn.hot_yellow:hover {
-  background-color: #bb8b04;
+  transform: scale(1.2);
 }
 #inicio {
   padding: 100px 0px 100px 0px;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url('../images/backgrounds/asamblea_3.jpg');
-  color: white;
+  background-image: url('../images/backgrounds/asamblea_1.jpg');
+  color: #222;
 }
 #inicio h1 {
   font-weight: bolder;
   font-size: 70px;
-  line-height: 0.9em;
+  line-height: 1.1em;
 }
-#inicioa,
-#inicio a {
+#inicio a.inverted {
+  display: inline-block;
+  padding: 0.05em 0.5em;
+  font-weight: bolder;
+  background-color: #222;
   color: white;
+  transition: all 100ms;
+}
+#inicio a.inverted:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+}
+#inicio h1 {
+  text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 1px 1px 0 #222;
+}
+#inicio .btn {
+  margin-top: 1em;
 }
 #porque {
   padding: 100px 0px 100px 0px;
@@ -116,49 +119,72 @@
 #porque h1 {
   font-weight: bolder;
   font-size: 70px;
-  line-height: 0.9em;
+  line-height: 1.1em;
+}
+#porque h1 {
+  text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 1px 1px 0 #222;
 }
 #que {
   padding: 100px 0px 100px 0px;
   background-size: cover;
   background-attachment: fixed;
-  background-color: #f78888;
+  background-color: #ff3378;
   color: white;
 }
 #que h1 {
   font-weight: bolder;
   font-size: 70px;
-  line-height: 0.9em;
+  line-height: 1.1em;
 }
 #quea,
 #que a {
   color: white;
 }
-#que a.reverse {
-  color: #f78888;
-  background-color: #ffffff;
+#que a.inverted {
+  display: inline-block;
+  padding: 0.05em 0.5em;
   font-weight: bolder;
+  background-color: white;
+  color: #ff3378;
+  transition: all 100ms;
 }
-#que a.reverse:hover {
+#que a.inverted:hover {
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.8);
-  transition: background-color 0.5s;
+  transform: scale(1.1);
+}
+#que h1 {
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 }
 #historia {
   padding: 100px 0px 100px 0px;
   background-size: cover;
   background-attachment: fixed;
   color: white;
-  background-color: #2f2e2e;
+  background-color: #222;
 }
 #historia h1 {
   font-weight: bolder;
   font-size: 70px;
-  line-height: 0.9em;
+  line-height: 1.1em;
 }
 #historiaa,
 #historia a {
   color: white;
+}
+#historia h1 {
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+#historia .carousel-control-next-icon {
+  color: blue;
+  width: 40px;
+  height: 40px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+#historia .carousel-control-prev-icon {
+  color: blue;
+  width: 40px;
+  height: 40px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 #participar {
   padding: 100px 0px 100px 0px;
@@ -168,12 +194,29 @@
 #participar h1 {
   font-weight: bolder;
   font-size: 70px;
-  line-height: 0.9em;
+  line-height: 1.1em;
+}
+#participar h1 {
+  text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 1px 1px 0 #222;
 }
 #participar .reverse {
   color: white;
-  background-color: #00bc94;
+  background-color: #1dd4d7;
   padding: 20px;
   font-size: 1.3em;
+}
+#discutimos {
+  padding: 100px 0px 100px 0px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #eee;
+}
+#discutimos h1 {
+  font-weight: bolder;
+  font-size: 70px;
+  line-height: 1.1em;
+}
+#discutimos h1 {
+  text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 1px 1px 0 #222;
 }
 /*# sourceMappingURL=nosotras.css.map */

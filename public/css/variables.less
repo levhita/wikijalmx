@@ -21,14 +21,11 @@
 
 
 
-@black: #2e3436;
-@grey: #555753;
-@light: #888a85;
-@lighter: #eeeeec;
+@black: #222;
+@grey: #555;
+@light: #888;
+@lighter: #eee;
 @back: @black;
-
-@darker: #444;
-@spacer: 60px;
 
 .center {
 	text-align: center;
@@ -62,58 +59,52 @@
 .big_title {
 	font-weight: bolder;
 	font-size: 70px;
-	line-height: 0.9em;
+	line-height: 1.1em;
 }
 
 .button(@color){
-	display:inline-block;
+	display: inline-block;
 	color: white;
 	font-weight: bolder;
 	font-size: 1.3em;
 	background-color: @color;
 	
 	&:hover {
-		background-color: @color - @darker;
+		transform: scale(1.2);
 	}
+	transition: all 100ms;
 }
 
 
 .btn {
 	&.purple { .button(@purple); }
-	&.blue { .button(@blue); }
-	&.green { .button(@green); }
-	&.pink { .button(@pink); }
-	&.yellow { .button(@yellow) }
+	&.blue   { .button(@blue);   }
+	&.green  { .button(@green);  }
+	&.pink   { .button(@pink);   }
+	&.yellow { .button(@yellow)  } 
 	
-	/*&.hot_green {.button(@hot_green);}
-	&.hot_pink {.button(@hot_pink); }
-	&.hot_yellow {.button(@hot_yellow)}*/
 }
 
 .text_border(@color){
 	text-shadow:
 	-1px -1px 0 @color,  
-	1px -1px 0 @color,
-	-1px 1px 0 @color,
-	1px 1px 0 @color;
+	 1px -1px 0 @color,
+	-1px  1px 0 @color,
+	 1px  1px 0 @color;
 }
 
 .inverted(@color, @background) {
-	padding: 0em 0.5em;
-
+	display:inline-block;
+	padding: 0.05em 0.5em;
+	
+	font-weight: bolder;
 	background-color: @background;
-	transition: background-color 0.5s;
-
 	color: @color;
-	transition: color 0.5s;
 
 	&:hover {
 		text-decoration: none;
-
-		background-color:  @color;
-		transition: background-color 0.5s;
-
-		color:@background ;
-		transition: color 0.5s;
+		transform: scale(1.1);
 	}
+
+	transition: all 100ms;
 }

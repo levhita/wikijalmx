@@ -5,6 +5,7 @@ include_once('microfw.php');
 $context = [
 	'_TITLE' =>'Esenciales | Wikipólitica Jalisco',
 	'_CSS' => ['css/esenciales.css'],
+	'_JS' => [],
 	'_ACTIVE' => 'esenciales',
 ];
 
@@ -56,13 +57,13 @@ render('main', $context, function($context){
 							</div>
 							<div class="card-footer">
 								<div class="small" style="float:left"><strong><?=htmlspecialchars($post->author)?></strong><br><?=$post->date?></div>
-								<div class="right"><a target="_blank" href="<?=$post->url?>" class="btn hot_pink" title="¡Ay que ler!">Leer</a></div>
+								<div class="right"><a target="_blank" href="<?=$post->url?>" class="btn pink" title="¡Ay que ler!">Leer</a></div>
 							</div>
 						</div>
 					</div>
 				<?php endforeach; ?>
 			</div>
-			<p class="right"><a href="publicaciones.html" class="btn hot_green">Ver todas las publicaciones...</a></p>
+			<p class="right"><a href="publicaciones.html" class="btn green">Ver todas las publicaciones...</a></p>
 		</div>
 	</section>
 	<?php

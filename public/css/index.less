@@ -5,7 +5,19 @@
 	background-image: url('../images/backgrounds/asamblea_3_clear.jpg');
 	.text_border(@back);
 	.white { .text_border(white);}
+	h1 { font-size: 54px; }
+
+}
+@media (min-width: 768px) {
+	#inicio {
+	h1 { font-size: 80px; }
+	}
+}
+
+@media (min-width: 992px) {
+	#inicio {
 	h1 { font-size: 90px; }
+	}
 }
 
 #wiki_data {
@@ -63,10 +75,12 @@
 		text-transform: uppercase;
 		color:white;
 	}
-	.inverted_white {
-		.inverted(@back, @green);
+	
+	.inverted {
+		.inverted(@back, white);
 	}
-	.btn {
+	
+	.btn{
 		margin-top: 1em;
 	}
 }
@@ -78,7 +92,6 @@
 	.left_section{
 		padding:5em;
 		color:@back;
-		//background-color: @blue;
 	}
 	.right_section{
 		padding:5em;
