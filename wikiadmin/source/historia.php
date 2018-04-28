@@ -18,7 +18,7 @@ render('main', $context, function($context){
 			<p>Wikipolítica nace como organización en verano de 2014. Sus inicios se remontan a la efervescencia política vivida durante el 2012 y los primeros intentos que le siguieron para articular el descontento hacia una nueva política que nos hiciera sentido. A continuación presentamos una línea del tiempo sobre Wikipolítica Jalisco y sus antecedentes.</p>
 		</div>
 		<div class="container-fluid">
-			<div id="historyCarousel" class="carousel slide" data-ride="carousel" data-interval="">
+			<div id="historyCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
 				<ol class="carousel-indicators">
 					<li data-target="#historyCarousel" data-slide-to="0" class="active"></li>
 					<?php for($i=1;$i<=10;$i++):?>
@@ -44,7 +44,6 @@ render('main', $context, function($context){
 					<span class="sr-only">Next</span>
 				</a>
 			</div>
-
 		</div>
 	</section>
 
