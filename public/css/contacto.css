@@ -18,13 +18,13 @@
 }
 .section h1 {
   font-weight: bolder;
-  font-size: 70px;
+  font-size: 40px;
   line-height: 1.1em;
 }
-.big_title {
-  font-weight: bolder;
-  font-size: 70px;
-  line-height: 1.1em;
+@media (min-width: 576px) {
+  .section h1 {
+    font-size: 70px;
+  }
 }
 .btn.purple {
   display: inline-block;
@@ -88,7 +88,7 @@
 }
 #contacto h1 {
   font-weight: bolder;
-  font-size: 70px;
+  font-size: 40px;
   line-height: 1.1em;
 }
 #contacto .address {
@@ -110,5 +110,10 @@
 #mc-embedded-subscribe {
   display: inline-block;
   border: none !important;
+}
+@media (min-width: 576px) {
+  #contacto h1 {
+    font-size: 70px;
+  }
 }
 /*# sourceMappingURL=contacto.css.map */

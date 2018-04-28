@@ -18,13 +18,13 @@
 }
 .section h1 {
   font-weight: bolder;
-  font-size: 70px;
+  font-size: 40px;
   line-height: 1.1em;
 }
-.big_title {
-  font-weight: bolder;
-  font-size: 70px;
-  line-height: 1.1em;
+@media (min-width: 576px) {
+  .section h1 {
+    font-size: 70px;
+  }
 }
 .btn.purple {
   display: inline-block;
@@ -90,14 +90,19 @@
 }
 #inicio h1 {
   font-weight: bolder;
-  font-size: 70px;
+  font-size: 40px;
   line-height: 1.1em;
 }
 #inicio .white {
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 }
 #inicio h1 {
-  font-size: 54px;
+  font-size: 34px;
+}
+@media (min-width: 576px) {
+  #inicio h1 {
+    font-size: 60px;
+  }
 }
 @media (min-width: 768px) {
   #inicio h1 {
@@ -118,7 +123,7 @@
 }
 #wiki_data h1 {
   font-weight: bolder;
-  font-size: 70px;
+  font-size: 40px;
   line-height: 1.1em;
 }
 #wiki_data h2 {
@@ -160,7 +165,7 @@
 }
 #nosotras h1 {
   font-weight: bolder;
-  font-size: 70px;
+  font-size: 40px;
   line-height: 1.1em;
 }
 #nosotras .large {
@@ -188,15 +193,23 @@
   text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 1px 1px 0 #222;
 }
 #proyectos .left_section {
-  padding: 5em;
+  padding: 2em;
   color: #222;
 }
 #proyectos .right_section {
-  padding: 5em;
+  padding: 2em;
   background-color: #0b72d9;
   color: white;
 }
 #proyectos .right_section h1 {
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+@media (min-width: 576px) {
+  #proyectos .left_section {
+    padding: 5em;
+  }
+  #proyectos .right_section {
+    padding: 5em;
+  }
 }
 /*# sourceMappingURL=index.css.map */

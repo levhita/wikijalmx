@@ -18,13 +18,13 @@
 }
 .section h1 {
   font-weight: bolder;
-  font-size: 70px;
+  font-size: 40px;
   line-height: 1.1em;
 }
-.big_title {
-  font-weight: bolder;
-  font-size: 70px;
-  line-height: 1.1em;
+@media (min-width: 576px) {
+  .section h1 {
+    font-size: 70px;
+  }
 }
 .btn.purple {
   display: inline-block;
@@ -90,7 +90,7 @@
 }
 #inicio h1 {
   font-weight: bolder;
-  font-size: 70px;
+  font-size: 40px;
   line-height: 1.1em;
 }
 #inicio a.inverted {
@@ -118,7 +118,7 @@
 }
 #porque h1 {
   font-weight: bolder;
-  font-size: 70px;
+  font-size: 40px;
   line-height: 1.1em;
 }
 #porque h1 {
@@ -133,7 +133,7 @@
 }
 #que h1 {
   font-weight: bolder;
-  font-size: 70px;
+  font-size: 40px;
   line-height: 1.1em;
 }
 #quea,
@@ -162,7 +162,7 @@
 }
 #participar h1 {
   font-weight: bolder;
-  font-size: 70px;
+  font-size: 40px;
   line-height: 1.1em;
 }
 #participar h1 {
@@ -206,10 +206,19 @@
 }
 #discutimos h1 {
   font-weight: bolder;
-  font-size: 70px;
+  font-size: 40px;
   line-height: 1.1em;
 }
 #discutimos h1 {
   text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 1px 1px 0 #222;
+}
+@media (min-width: 576px) {
+  #discutimos h1,
+  #participar h1,
+  #que h1,
+  #porque h1,
+  #inicio h1 {
+    font-size: 70px;
+  }
 }
 /*# sourceMappingURL=nosotras.css.map */

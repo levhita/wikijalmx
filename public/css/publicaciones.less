@@ -2,7 +2,7 @@
 
 #inicio {
 	.section;
-	background-image: url('../images/backgrounds/asamblea_2.jpg');
+	background-color:@green;
 	h1 {
 		.text_border(@black);
 	}
@@ -10,11 +10,21 @@
 
 #publicaciones {
 	.section;
-	
 	.card {
 		margin-bottom: 1em;
 	}
 	h1 {
 		.text_border(@black);
+	}
+}
+
+@media (min-width: 576px) {
+	#inicio h1 {
+		font-size: 60px;
+	}
+}
+@media (min-width: 768px) {
+	#inicio h1 {
+		font-size: 70px;
 	}
 }

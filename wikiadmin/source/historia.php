@@ -2,7 +2,7 @@
 include("microfw.php");
 
 $context = [
-	'_TITLE' =>'Nosotras | Wikipolítica Jalisco',
+	'_TITLE' =>'Historia | Wikipolítica Jalisco',
 	'_CSS' => ['css/historia.css'],
 	'_JS' => [],
 	'_ACTIVE' => 'historia',

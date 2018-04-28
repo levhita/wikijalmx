@@ -5,18 +5,24 @@
 	background-image: url('../images/backgrounds/asamblea_3_clear.jpg');
 	.text_border(@back);
 	.white { .text_border(white);}
-	h1 { font-size: 54px; }
+	h1 { font-size: 34px; }
 
 }
+@media (min-width: 576px) {
+	#inicio {
+		h1 { font-size: 60px; }
+	}
+}
+
 @media (min-width: 768px) {
 	#inicio {
-	h1 { font-size: 80px; }
+		h1 { font-size: 80px; }
 	}
 }
 
 @media (min-width: 992px) {
 	#inicio {
-	h1 { font-size: 90px; }
+		h1 { font-size: 90px; }
 	}
 }
 
@@ -38,30 +44,30 @@
 				top:-2px;
 				left:-2px;
 			//	text-shadow: 2px  2px 3px rgba(0,0,0,0.3);
-			}
 		}
 	}
-	
-	p {
-		margin-top:.5em;
-		font-size: 1.8em;
-		line-height: 0.9em;
-		font-family: 'Raleway', sans-serif;
-		text-transform: uppercase;
-		
-		a {
-			text-decoration: none;
-			color:white;
-			
-			&:hover {
-				position: relative;
-				top:-2px;
-				left:-2px;
-				text-shadow: 2px  2px 3px rgba(0,0,0,0.3);
-			}
-		}
+}
 
+p {
+	margin-top:.5em;
+	font-size: 1.8em;
+	line-height: 0.9em;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	
+	a {
+		text-decoration: none;
+		color:white;
+		
+		&:hover {
+			position: relative;
+			top:-2px;
+			left:-2px;
+			text-shadow: 2px  2px 3px rgba(0,0,0,0.3);
+		}
 	}
+
+}
 }
 
 #nosotras {
@@ -90,15 +96,26 @@
 		.text_border(@back);
 	}
 	.left_section{
-		padding:5em;
+		padding:2em;
 		color:@back;
 	}
 	.right_section{
-		padding:5em;
+		padding:2em;
 		background-color: @blue;
 		color:white;
 		h1{
 			.text_border(white);
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	#proyectos {
+		.left_section{
+			padding:5em;
+		}
+		.right_section{
+			padding:5em;
 		}
 	}
 }

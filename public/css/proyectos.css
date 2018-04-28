@@ -18,13 +18,13 @@
 }
 .section h1 {
   font-weight: bolder;
-  font-size: 70px;
+  font-size: 40px;
   line-height: 1.1em;
 }
-.big_title {
-  font-weight: bolder;
-  font-size: 70px;
-  line-height: 1.1em;
+@media (min-width: 576px) {
+  .section h1 {
+    font-size: 70px;
+  }
 }
 .btn.purple {
   display: inline-block;
@@ -90,7 +90,7 @@
 }
 #proyectos h1 {
   font-weight: bolder;
-  font-size: 70px;
+  font-size: 40px;
   line-height: 1.1em;
 }
 #proyectos h1 {
@@ -110,7 +110,7 @@
 }
 #active h1 {
   font-weight: bolder;
-  font-size: 70px;
+  font-size: 40px;
   line-height: 1.1em;
 }
 #active h1 {
@@ -127,7 +127,7 @@
 }
 #archive h1 {
   font-weight: bolder;
-  font-size: 70px;
+  font-size: 40px;
   line-height: 1.1em;
 }
 #archive h1 {
@@ -135,5 +135,12 @@
 }
 #archive .card {
   margin-bottom: 1em;
+}
+@media (min-width: 576px) {
+  #archive h1,
+  #active h1,
+  #proyectos h1 {
+    font-size: 70px;
+  }
 }
 /*# sourceMappingURL=proyectos.css.map */
