@@ -1,13 +1,12 @@
-<?php extract($context) ?><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
-	<title><?=$_TITLE?></title>
-	<?=css($_CSS)?>
-	<link rel="icon" href="images/favicon.png">
+	<title>Calendario | Wikipolítica Jalisco</title>
+	<link rel="stylesheet" href="css/calendario.css">	<link rel="icon" href="images/favicon.png">
 	<link rel="apple-touch-icon-precomposed" href="images/favicon_apple.png">
 </head>
 
@@ -23,39 +22,39 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto"></ul>
 			<ul class="navbar-nav ml-auto my-2 my-lg-0">
-				<li class="nav-item <?=($_ACTIVE=='inicio')?'active':''?>">
+				<li class="nav-item ">
 					<a class="nav-link" href="index.html">Inicio</a>
 				</li>
 				
-				<li class="nav-item <?=($_ACTIVE=='nosotras')?'active':''?>">
+				<li class="nav-item ">
 					<a class="nav-link" href="nosotras.html">Nosotras</a>
 				</li>
 				
-				<!--<li class="nav-item <?=($_ACTIVE=='esenciales')?'active':''?>">
+				<!--<li class="nav-item ">
 					<a class="nav-link" href="esenciales.html">Esenciales</a>
 				</li>-->
 				
-				<li class="nav-item <?=($_ACTIVE=='estructura')?'active':''?>">
+				<li class="nav-item ">
 					<a class="nav-link" href="estructura.html">Estructura</a>
 				</li>
 				
-				<li class="nav-item <?=($_ACTIVE=='proyectos')?'active':''?>">
+				<li class="nav-item ">
 					<a class="nav-link" href="proyectos.html">Proyectos</a>
 				</li>
 				
-				<li class="nav-item <?=($_ACTIVE=='calendario')?'active':''?>">
+				<li class="nav-item active">
 					<a class="nav-link" href="calendario.html">Calendario</a>
 				</li>
 
-				<li class="nav-item <?=($_ACTIVE=='publicaciones')?'active':''?>">
+				<li class="nav-item ">
 					<a class="nav-link" href="publicaciones.html">Publicaciones</a>
 				</li>
 
-				<li class="nav-item <?=($_ACTIVE=='historia')?'active':''?>">
+				<li class="nav-item ">
 					<a class="nav-link" href="historia.html">Historia</a>
 				</li>
 
-				<li class="nav-item <?=($_ACTIVE=='contacto')?'active':''?>">
+				<li class="nav-item ">
 					<a class="nav-link" href="contacto.html">Contacto</a>
 				</li>
 				
@@ -63,8 +62,18 @@
 		</div>
 	</nav>
 
-	<?=$_CONTENT?>
-	<div id="footer_container">
+		
+	<section  id="inicio">
+		<div class="container">
+			<h1>CALENDARIO</h1>
+			<h2>Asiste a los eventos que organiza WikiPolítica en Jalisco, conferencias, conversatorios, encuentros, asambleas.</h2>
+		</div>
+	</section>
+	
+	<section class="container" id="calendar">
+		<iframe src="https://calendar.google.com/calendar/b/4/embed?height=800&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=wikijal.mx_am6qff31l8ang5cvvl96f3j29c%40group.calendar.google.com&amp;color=%23FF3378&amp;ctz=America%2FMexico_City" style="border-width:0"  frameborder="0" scrolling="no"></iframe>			
+	</section>
+		<div id="footer_container">
 		<footer class="container">
 			<div class="row">
 				<div class="col">
@@ -84,7 +93,6 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<?=js($_JS)?>
-
+	
 </body>
 </html>

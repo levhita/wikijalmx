@@ -3,7 +3,7 @@ include_once('db.php');
 include_once('microfw.php');
 
 $context = [
-	'_TITLE' =>'Proyectos | Wikipólitica Jalisco',
+	'_TITLE' =>'Proyectos | Wikipolítica Jalisco',
 	'_CSS' => ['css/proyectos.css'],
 	'_JS' => [],
 	'_ACTIVE' => 'proyectos',
@@ -73,7 +73,7 @@ render('main', $context, function($context){
 		<div class="container">
 			<h1>HISTORICO DE<br>PROYECTOS</h1>
 			
-			<p>Estos proyectos no están actualmente activos, pero son suceptibles de reactivarse en cualquier momento, ya sea por un contexto social similar al que los detonó en primer lugar, o por interes de los miembros de Wikipólitica.</p>
+			<p>Estos proyectos no están actualmente activos, pero son suceptibles de reactivarse en cualquier momento, ya sea por un contexto social similar al que los detonó en primer lugar, o por interes de los miembros de Wikipolítica.</p>
 
 			<div class="row">
 				<?php foreach($archives as $project): ?>

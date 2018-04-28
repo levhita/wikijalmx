@@ -2,7 +2,7 @@
 include("microfw.php");
 
 $context = [
-	'_TITLE' =>'Nosotras | Wikipólitica Jalisco',
+	'_TITLE' =>'Nosotras | Wikipolítica Jalisco',
 	'_CSS' => ['css/nosotras.css'],
 	'_JS' => [],
 	'_ACTIVE' => 'nosotras',
@@ -14,13 +14,13 @@ render('main', $context, function($context){
 	
 	<section id="inicio">
 		<div class="container">
-			<h1>QUÉ ES<br>WIKIPÓLITICA</h1>
+			<h1>QUÉ ES<br>WIKIPOLÍTICA</h1>
 			<p>
 				Somos una red de personas que buscamos nuevas formas de hacer política en colectivo.<br>
 				Apostamos por la apertura y la colaboración para organizarnos e incidir sobre lo público, tanto tejiendo redes con movimientos sociales y organizaciones de la sociedad civil, como ocupando espacios de gobierno para abrirlos hacia la participación de más personas.
 			</p>
 
-			<p>Formamos parte de la red nacional <a class="inverted" href="http://wikipolitica.mx/" target="_blank">Wikipólitica MX</a>.</p>
+			<p>Formamos parte de la red nacional <a class="inverted" href="http://wikipolitica.mx/" target="_blank">Wikipolítica</a>.</p>
 			<br><br>
 			<div class="row">
 				<div class="col-md-4 center">
@@ -30,7 +30,7 @@ render('main', $context, function($context){
 					<a class="btn pink" href="#que">¿En qué creemos?</a>
 				</div>
 				<div class="col-md-4 center">
-					<a class="btn yellow" href="#historia">Nuestra Historia</a>
+					<a class="btn yellow" href="historia.html">Historia</a>
 				</div>
 
 			</div>
@@ -41,7 +41,7 @@ render('main', $context, function($context){
 
 	<section id="porque">
 		<div class="container">
-			<h1>POR QUÉ CONSTRUIR<br>UNA NUEVA PÓLITICA</h1>
+			<h1>POR QUÉ CONSTRUIR<br>UNA NUEVA POLÍTICA</h1>
 
 			<p>Somos la mayoría quienes queremos construir un nuevo futuro, quienes no nos sentimos representados por la clase política actual y no queremos seguir delegando la política a quienes la hacen para unos cuantos.</p>
 
@@ -66,7 +66,7 @@ render('main', $context, function($context){
 					<p>Propuestas fundamentales para la organización, el funcionamiento y las acciones de todos los nodos de Wikipolítica que se encuentran siempre presentes —explícita o implícitamente— en los objetivos y agendas que perseguimos nacional y localmente.</p>
 
 					<ul>
-						<li>Democracia real y participativa.</li>
+						<li>Democracia real y participativa</li>
 						<li>Derechos humanos</li>
 						<li>Localismo</li>
 						<li>Rendición de cuentas</li>
@@ -101,61 +101,26 @@ render('main', $context, function($context){
 
 	</section>
 
-	<section id="historia">
-		<div class="container">
-
-			<h1>NUESTRA<br>HISTORIA</h1>
-			<p>Wikipolítica nace como organización en verano de 2014. Sus inicios se remontan a la efervescencia política vivida durante el 2012 y los primeros intentos que le siguieron para articular el descontento hacia una nueva política que nos hiciera sentido. A continuación presentamos una línea del tiempo sobre Wikipolítica Jalisco y sus antecedentes.</p>
-			<div id="historyCarousel" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#historyCarousel" data-slide-to="0" class="active"></li>
-					<?php for($i=1;$i<=10;$i++):?>
-						<li data-target="#historyCarousel" data-slide-to="<?=$i?>"></li>
-					<?php endfor;?>
-				</ol>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img class="d-block w-100" src="images/historia/historia0.jpg" alt="Historia 0">
-					</div>
-					<?php for($i=1;$i<=10;$i++):?> 
-						<div class="carousel-item">
-							<img class="d-block w-100" src="images/historia/historia<?=$i?>.jpg" alt="Historia <?=$i?>">
-						</div>
-					<?php endfor;?>
-				</div>
-				<a class="carousel-control-prev" href="#historyCarousel" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#historyCarousel" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
-
-		</div>
-	</section>
-
 	<section id="participar">
 		<div class="container">
 			<h1>CÓMO PARTICIPAR EN<br>
 			WIKIPOLÍTICA JALISCO</h1>
 			<p>Después de transitar por distintos modelos de asambleas, comisiones y juntas periódicas, nos hemos convencido de que <strong>la mejor forma de hacer Wikipolítica es de manera abierta</strong>. Cualquier persona puede participar e involucrarse en el trabajo y toma de decisiones hasta donde su compromiso y los principios que compartimos lo permitan.</p>
 
-			<p>Todas las personas que estamos aquí somos wikis. Por eso son tan importantes <strong>las temperaturas de participación</strong>, que nos permiten organizarnos y actuar como una red, fundamentada en reconocernos y reconocer la diversidad de voluntades que forman esta  generosa comunidad en lo virtual y presencial.</p>
+			<p>Todas las personas que estamos aquí somos wikis. Por eso es tan importante <a href="#meritos" class="inverted">El Sistema de Méritos</a>, que nos permiten organizarnos y actuar como una red, fundamentada en reconocernos y reconocer la diversidad de voluntades que forman esta  generosa comunidad en lo virtual y presencial.</p>
 
 			<p>Nos vemos <strong>una vez al mes en los Encuentros Mensuales</strong> de la comunidad, <strong>colaboramos en proyectos</strong> y nos mantenemos en comunicación por <strong>canales virtuales</strong>, donde podemos aprender y convivir mientras hacemos política entre personas comunes.</p>
 
 			<div class="reverse">
-				El primer paso para participar es asistir a alguno de los <strong>Encuentros Mensuales*</strong>. En ellos podrás registrarte como wiki, impartir un taller o unirte a algúna de las mesas de trabajo.
+				El primer paso para participar es asistir a alguno de los <a href="calendario.html" class="inverted">Encuentros Mensuales*</a>. En ellos podrás registrarte como wiki, impartir un taller o unirte a alguna de las mesas de trabajo.
 			</div>
-			<div class="right small">* La invitación es siempre abierta y anunciada en nuestras redes sociales.</div>
+			<div class="right">* La invitación es siempre abierta y anunciada en nuestras redes sociales.</div>
 
 		</div>
 	</section>
 	<section id="discutimos">
 		<div class="container">
-			<h1>¿Cómo Discutimos?</h1>
+			<h1>¿CÓMO<br>DISCUTIMOS?</h1>
 			<p>En Wikipolítica <strong>privilegiamos el diálogo</strong> donde pueden escucharse todas las voces. Creemos que <strong>la deliberación colectiva vale la pena</strong>, aunque reconocemos la complejidad de llevarse de manera sostenible entre muchas personas.</p>
 
 			<p>Es por esto que <strong>buscamos constantemente innovar en la forma en la que discutimos y tomamos decisiones</strong>. Esto nos ha permitido reconocer prácticas deseables para cada tipo de espacio de discusión, ya sea <strong>presencial o virtual</strong>.</p>
@@ -166,9 +131,9 @@ render('main', $context, function($context){
 		</div>
 	</section>
 	
-	<div>
+	<section id="meritos">
 		<img src="images/meritos.png" alt="sistema de méritos" style="width:100%"/>
-	</div>
+	</section>
 	
 	<?php
 });

@@ -3,7 +3,7 @@ include_once('db.php');
 include_once('microfw.php');
 
 $context = [
-	'_TITLE' =>'Esenciales | Wikipólitica Jalisco',
+	'_TITLE' =>'Esenciales | Wikipolítica Jalisco',
 	'_CSS' => ['css/esenciales.css'],
 	'_JS' => [],
 	'_ACTIVE' => 'esenciales',

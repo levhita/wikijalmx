@@ -4,7 +4,7 @@ include_once('microfw.php');
 
 
 $context = [
-	'_TITLE' =>'Publicaciones | Wikipólitica Jalisco',
+	'_TITLE' =>'Publicaciones | Wikipolítica Jalisco',
 	'_CSS' => ['css/publicaciones.css'],
 	'_JS' => [],
 	'_ACTIVE' => 'publicaciones',

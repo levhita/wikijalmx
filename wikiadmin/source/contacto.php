@@ -2,7 +2,7 @@
 include_once("microfw.php");
 
 $context = [
-	'_TITLE' =>'Contacto | Wikipólitica Jalisco',
+	'_TITLE' =>'Contacto | Wikipolítica Jalisco',
 	'_CSS' => ['https://cdn-images.mailchimp.com/embedcode/classic-10_7.css','css/contacto.css'],
 	'_JS' => [],
 	'_ACTIVE' => 'contacto',

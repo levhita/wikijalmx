@@ -1,0 +1,113 @@
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.white {
+  color: white;
+}
+.whitea,
+.white a {
+  color: white;
+}
+.section {
+  padding: 100px 0px 100px 0px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section h1 {
+  font-weight: bolder;
+  font-size: 70px;
+  line-height: 1.1em;
+}
+.big_title {
+  font-weight: bolder;
+  font-size: 70px;
+  line-height: 1.1em;
+}
+.btn.purple {
+  display: inline-block;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.3em;
+  background-color: #831f99;
+  transition: all 100ms;
+}
+.btn.purple:hover {
+  transform: scale(1.2);
+}
+.btn.blue {
+  display: inline-block;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.3em;
+  background-color: #0b72d9;
+  transition: all 100ms;
+}
+.btn.blue:hover {
+  transform: scale(1.2);
+}
+.btn.green {
+  display: inline-block;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.3em;
+  background-color: #5ce6cf;
+  transition: all 100ms;
+}
+.btn.green:hover {
+  transform: scale(1.2);
+}
+.btn.pink {
+  display: inline-block;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.3em;
+  background-color: #ff3378;
+  transition: all 100ms;
+}
+.btn.pink:hover {
+  transform: scale(1.2);
+}
+.btn.yellow {
+  display: inline-block;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.3em;
+  background-color: #fed500;
+  transition: all 100ms;
+}
+.btn.yellow:hover {
+  transform: scale(1.2);
+}
+#inicio {
+  padding: 100px 0px 100px 0px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #fed500;
+  color: #222;
+}
+#inicio h1 {
+  font-weight: bolder;
+  font-size: 70px;
+  line-height: 1.1em;
+}
+#inicio h1 {
+  text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 1px 1px 0 #222;
+}
+#calendar iframe {
+  height: 500px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #calendar iframe {
+    height: 600px;
+  }
+}
+@media (min-width: 992px) {
+  #calendar iframe {
+    height: 800px;
+  }
+}
+/*# sourceMappingURL=calendario.css.map */

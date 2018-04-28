@@ -155,37 +155,6 @@
 #que h1 {
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 }
-#historia {
-  padding: 100px 0px 100px 0px;
-  background-size: cover;
-  background-attachment: fixed;
-  color: white;
-  background-color: #222;
-}
-#historia h1 {
-  font-weight: bolder;
-  font-size: 70px;
-  line-height: 1.1em;
-}
-#historiaa,
-#historia a {
-  color: white;
-}
-#historia h1 {
-  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-}
-#historia .carousel-control-next-icon {
-  color: blue;
-  width: 40px;
-  height: 40px;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-}
-#historia .carousel-control-prev-icon {
-  color: blue;
-  width: 40px;
-  height: 40px;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-}
 #participar {
   padding: 100px 0px 100px 0px;
   background-size: cover;
@@ -204,6 +173,30 @@
   background-color: #1dd4d7;
   padding: 20px;
   font-size: 1.3em;
+}
+#participar .reverse a.inverted {
+  display: inline-block;
+  padding: 0.05em 0.5em;
+  font-weight: bolder;
+  background-color: white;
+  color: #1dd4d7;
+  transition: all 100ms;
+}
+#participar .reverse a.inverted:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+}
+#participar a.inverted {
+  display: inline-block;
+  padding: 0.05em 0.5em;
+  font-weight: bolder;
+  background-color: #1dd4d7;
+  color: white;
+  transition: all 100ms;
+}
+#participar a.inverted:hover {
+  text-decoration: none;
+  transform: scale(1.1);
 }
 #discutimos {
   padding: 100px 0px 100px 0px;

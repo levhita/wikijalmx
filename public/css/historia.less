@@ -1,0 +1,36 @@
+@import "variables.less";
+
+#historia {
+	.section;
+	.white;
+	background-color: @back;
+	h1 {
+		.text_border(white);
+	}
+}
+
+
+
+#historyCarousel {
+	margin: 0 -15px;
+	.carousel-control-next-icon {
+		color:blue;
+		width:40px;
+		height:40px;
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+	}
+	.carousel-control-prev-icon {
+		color:blue;
+		width:40px;
+		height:40px;
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+	}
+}
+
+
+@media (min-width: 1200px) { 
+	#historyCarousel {
+		max-width:1200px;
+		margin: 0 auto;
+	}
+}

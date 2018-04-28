@@ -1,0 +1,28 @@
+@import "variables.less";
+
+#inicio {
+	.section;
+	background-color: @yellow;	
+	color: @black;
+	h1 {
+		.text_border(@black);
+	}
+}
+
+#calendar iframe{
+	height:500px;
+	width:100%;
+}
+
+@media (min-width: 768px) {
+	#calendar iframe{
+		height:600px;
+	}
+}
+
+@media (min-width: 992px) {
+	#calendar iframe{
+		height:800px;
+	}
+}
+

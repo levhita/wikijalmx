@@ -2,55 +2,34 @@
 include("microfw.php");
 
 $context = [
-	'_TITLE' =>'Estructura | Wikipólitica Jalisco',
+	'_TITLE' =>'Estructura | Wikipolítica Jalisco',
 	'_CSS' => ['css/estructura.css'],
 	'_JS'  => [],
 	'_ACTIVE' => 'estructura',
 ];
 
 $context['consejo_politico'] = [
-	['Daniel Iñiguez','transparencio.publico@gmail.com','danieliniguez'],
-	['Andrés Flores','andresfloresdelacruz@hotmail.com','iAndresFlores'],
-	['Andrés Barrios','	andres@generaweb.net ','huampoyotl'],
-	['Luis Landivar','luislandivar@gmail.com',''],
-	['Ana Vicencio','anawikivic@gmail.com','anavehache'],
-	['Alejandra Parra','aleparrac@gmail.com','aleparrac'],
+	['Daniel Iñiguez','danieliniguez'],
+	['Andrés Flores','iAndresFlores'],
+	['Andrés Barrios','huampoyotl'],
+	['Luis Landivar',''],
+	['Ana Vicencio','anavehache'],
+	['Alejandra Parra','aleparrac'],
 ];
 $context['consejo_vigilancia'] = [
-	['Álvaro Quintero','alvaro.quintero@kumamoto.mx','alvaro_qc'],
-	['Mariela Elizondo','melizondogtz@gmail.com','Wall_a_bee'],
-	['Pablo Guízar','pablo.guib@gmail.com','pablo_guizar'],
+	['Álvaro Quintero','alvaro_qc'],
+	['Mariela Elizondo','Wall_a_bee'],
+	['Pablo Guízar','pablo_guizar'],
 ];
 
 $context['equipo_ejecutivo'] = [
-	'COORDINACION GENERAL' => [
-		['Daniel Villalba','d.vinculacion.wiki@gmail.com','TachiVil'],
-	],
-	'COMUNICACION' => [
-		['Hugo Charles','hugo.charles16@gmail.com','HugoCharlesB'],
-		['Edgar Quintana','el.edgar.seis@gmail.com','edgarseis'],
-		['Susana Ramirez','yuyuramirez15@gmail.com','su_bravo'],
-	],
-	'TESORERIA' => [
-		['Maria Espinosa','mayesaurio@gmail.com','Mayesaurio'],
-		['Hugo Jiménez','hugoayipey@gmail.com','hugoayipey'],
-	],
-	'PROYECTOS' => [
-		['Emilio Ritter','emilioritter.91@gmail.com','EERitter'],
-		['Dinora Villalobos','dinoravillalobos29@gmail.com',''],
-	],
-	'VINCULACIÓN' => [
-		['Daniel Villalba','d.vinculacion.wiki@gmail.com','TachiVil'],
-	],
-	'COMUNIDAD' => [
-		['Andrés Flores','andresfloresdelacruz@hotmail.com','iAndresFlores'],
-		['Juan Blackaller','juanblacka@gmail.com','juanblackaller'],
-		['Alain Usiel Mendoza Carrillo','habikainmobiliaria@gmail.com','alainmendoza'],
-	],
-	'SECRETARÍA TÉCNICA' => [
-		['Daniel Padilla','gdanielpg@gmail.com','gdanielpadilla'],
-		['Mario Vazquez','jmariusgdl@gmail.com','JM4rio'],
-	],
+	['COORDINACIóN GENERAL', 'Daniel Villalba','TachiVil'],
+	['COMUNICACIóN', 'Hugo Charles','HugoCharlesB'],
+	['TESORERíA','Maria Espinosa','Mayesaurio'],
+	['PROYECTOS', 'Emilio Ritter','EERitter'],
+	['VINCULACIóN','Daniel Villalba','TachiVil'],
+	['COMUNIDAD','Andrés Flores','iAndresFlores'],
+	['SECRETARíA TéCNICA', 'Daniel Padilla','gdanielpadilla'],
 ];
 
 render('main', $context, function($context){
@@ -61,10 +40,11 @@ render('main', $context, function($context){
 		<div class="row">
 			<div class="col-md-8">
 				<h1>NODO<br>JALISCO</h1>
-				<p>Wikipolítica MX es una red que se conforma por Nodos, mismos que tienen facultades para organizarse localmente.</p>
+				<h2>Wikipolítica MX es una red que se conforma por Nodos, mismos que tienen facultades para organizarse localmente.</h2>
 
-				<p>En nuestra Entidad, lo hacemos de conformidad con nuestro Reglamento y siempre en constante apego a los principios, valores e identidad de la Red Nacional, de ésta manera, promovemos la agenda, proyectos, y objetivos particulares que decidimos, de manera colectiva, desarrollar entre los que integramos esta comunidad en el Estado de Jalisco.</p>
+				<p>En nuestra entidad lo hacemos de conformidad con nuestro reglamento y siempre en constante apego a los principios, valores e identidad de la Red Nacional, de esta manera promovemos la agenda, proyectos y objetivos particulares que decidimos, de manera colectiva, desarrollar entre los que integramos esta comunidad en el estado de Jalisco.</p>
 			</div>
+			
 			<div class="col-md-4 otros">
 				<div class="center"><img src="images/icons/location.png" alt="location"/></div>
 				<p class="center">Estamos también en 9 Estados del país:</p>
@@ -128,11 +108,10 @@ render('main', $context, function($context){
 		</div>
 	</div>
 	
-	<div class="container">
+	<!--<div class="container">
 		<img width="100%" src="images/estructura.png" alt="Estructura"/>
-	</div>
+	</div>-->
 	
-
 	<div class="modal fade detalle_asamblea" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
@@ -144,7 +123,7 @@ render('main', $context, function($context){
 				</div>
 				<div class="modal-body">
 					<div class="alert alert-secondary" role="alert">
-						<strong>Nota:</strong> Ésta lista está conformada por 96 miembros al día de hoy(pero cambía en todo momento dependiendo de las temperaturas de participación), se está compilando la información para su presentación.
+						<strong>Nota:</strong> Esta lista está conformada por 107 miembros al día de hoy (pero cambia en todo momento dependiendo del sistema de méritos), se está compilando la información para su presentación.
 					</div>
 
 				</div>
@@ -163,15 +142,13 @@ render('main', $context, function($context){
 				</div>
 				<div class="modal-body">
 					<table class="table table-borderless">
-						<?php foreach($equipo_ejecutivo AS $section => $miembros):?>
-							<thead class="thead-dark"><th colspan="3"><?=$section?></th></thead>
-							<?php foreach($miembros AS $miembro):?>
-								<tr>
-									<td><?=$miembro[0]?></td>
-									<td><a href="mailto:<?=$miembro[1]?>"><?=$miembro[1]?></a></td>
-									<td><a href="https://twitter.com/<?=$miembro[2]?>" target="_blank"><?=!empty($miembro[2])?'@'.$miembro[2]:''?></a></td>
-								</tr>
-							<?php endforeach; ?>
+						<thead><th>Coordinación</th><th>Nombre</th><th>Twitter</th></thead>
+						<?php foreach($equipo_ejecutivo AS $miembro):?>
+							<tr>
+								<td><?=ucwords(strtolower($miembro[0]))?></td>
+								<td><?=$miembro[1]?></td>
+								<td><a href="https://twitter.com/<?=$miembro[2]?>" target="_blank"><?=!empty($miembro[2])?'@'.$miembro[2]:''?></a></td>
+							</tr>
 						<?php endforeach; ?>
 					</table>
 				</div>
@@ -190,13 +167,12 @@ render('main', $context, function($context){
 				</div>
 				<div class="modal-body">
 					<table class="table table-striped">
-						<thead><th>Nombre</th><th>Correo Electrónico</th><th>Twitter</th></thead>
+						<thead><th>Nombre</th><th>Twitter</th></thead>
 						<tbody>
 							<?php foreach($consejo_vigilancia AS $miembro):?>
 								<tr>
 									<td><?=$miembro[0]?></td>
-									<td><a href="mailto:<?=$miembro[1]?>"><?=$miembro[1]?></a></td>
-									<td><a href="https://twitter.com/<?=$miembro[2]?>" target="_blank">@<?=$miembro[2]?></a></td>
+									<td><a href="https://twitter.com/<?=$miembro[1]?>" target="_blank"><?=!empty($miembro[1])?'@'.$miembro[1]:''?></a></td>
 								</tr>
 							<?php endforeach; ?>
 						</tbody>
@@ -218,13 +194,12 @@ render('main', $context, function($context){
 				</div>
 				<div class="modal-body">
 					<table class="table table-striped">
-						<thead><th>Nombre</th><th>Correo Electrónico</th><th>Twitter</th></thead>
+						<thead><th>Nombre</th><th>Twitter</th></thead>
 						<tbody>
 							<?php foreach($consejo_politico AS $miembro):?>
 								<tr>
 									<td><?=$miembro[0]?></td>
-									<td><a href="mailto:<?=$miembro[1]?>"><?=$miembro[1]?></a></td>
-									<td><a href="https://twitter.com/<?=$miembro[2]?>" target="_blank"><?=!empty($miembro[2])?'@'.$miembro[2]:''?></a></td>
+									<td><a href="https://twitter.com/<?=$miembro[1]?>" target="_blank"><?=!empty($miembro[1])?'@'.$miembro[1]:''?></a></td>
 								</tr>
 							<?php endforeach; ?>
 						</tbody>

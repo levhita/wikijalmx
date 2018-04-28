@@ -2,7 +2,7 @@
 include("microfw.php");
 
 $context = [
-	'_TITLE' =>'Principios y Valores | Wikipólitica Jalisco',
+	'_TITLE' =>'Principios y Valores | Wikipolítica Jalisco',
 	'_CSS' => ['css/principios_valores.css'],
 	'_JS' => [],
 	'_ACTIVE' => 'principios_valores',
