@@ -89,7 +89,7 @@ render('main', $context, function($context){
 
 					<p>
 						Email: <a href="mailto:comunidad@wikijal.mx">comunidad@wikijal.mx</a><br>
-						Tel: <a href="tel:(33) 16901383">(33) 1690-1383</a>
+						<!--Tel: <a href="tel:(33) 16901383">(33) 1690-1383</a>-->
 					</p>
 
 
