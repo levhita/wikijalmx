@@ -134,6 +134,9 @@
   background-color: #ff3378;
   background-image: url('../images/consejo_politico.png');
 }
+.card {
+  margin-bottom: 1em;
+}
 #consejo_vigilancia {
   background-color: #0b72d9;
   background-image: url('../images/consejo_vigilancia.png');
@@ -146,4 +149,3 @@
     font-size: 70px;
   }
 }
-/*# sourceMappingURL=estructura.css.map */

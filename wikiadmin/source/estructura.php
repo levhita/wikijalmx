@@ -9,27 +9,27 @@ $context = [
 ];
 
 $context['consejo_politico'] = [
-	['Daniel Iñiguez','danieliniguez'],
-	['Andrés Flores','iAndresFlores'],
-	['Andrés Barrios','huampoyotl'],
-	['Luis Landivar',''],
-	['Ana Vicencio','anavehache'],
-	['Alejandra Parra','aleparrac'],
+	['Daniel Iñiguez','danieliniguez','images/profiles/daniel_iniguez.jpg'],
+	['Andrés Flores','iAndresFlores','images/profiles/andres_flores.jpg'],
+	['Andrés Barrios','huampoyotl','images/profiles/barrios.jpg'],
+	['Luis Landivar','LuisHLandivar','images/profiles/boli.jpg'],
+	['Ana Vicencio','anavehache','images/profiles/vicencio.jpg'],
+	['Alejandra Parra','aleparrac','images/profiles/ale_parra.jpg'],
 ];
 $context['consejo_vigilancia'] = [
-	['Álvaro Quintero','alvaro_qc'],
-	['Mariela Elizondo','Wall_a_bee'],
-	['Pablo Guízar','pablo_guizar'],
+	['Álvaro Quintero','alvaro_qc','images/profiles/alvaro.jpg'],
+	['Mariela Elizondo','Wall_a_bee','images/profiles/mariela.jpg'],
+	['Pablo Guízar','PabloTguizar','images/profiles/pablo_guizar.jpg'],
 ];
 
 $context['equipo_ejecutivo'] = [
-	['COORDINACIóN GENERAL', 'Daniel Villalba','TachiVil'],
-	['COMUNICACIóN', 'Hugo Charles','HugoCharlesB'],
-	['TESORERíA','Maria Espinosa','Mayesaurio'],
-	['PROYECTOS', 'Emilio Ritter','EERitter'],
-	['VINCULACIóN','Daniel Villalba','TachiVil'],
-	['COMUNIDAD','Andrés Flores','iAndresFlores'],
-	['SECRETARíA TéCNICA', 'Daniel Padilla','gdanielpadilla'],
+	['COORDINACIóN GENERAL', 'Daniel Villalba','tachi_villalba','images/profiles/daniel_villalba.jpg'],
+	['COMUNICACIóN', 'Hugo Charles','HugoCharlesB', 'images/profiles/hugo_charles.jpg'],
+	['TESORERíA','Maria Espinosa','Mayesaurio_Rex','images/profiles/maye_espinosa.jpg'],
+	['PROYECTOS', 'Emilio Ritter','EE_Ritter','images/profiles/emilio_ritter.jpg'],
+	['VINCULACIóN','Daniel Villalba','tachi_villalba','images/profiles/daniel_villalba.jpg'],
+	['COMUNIDAD','Andrés Flores','iAndresFlores','images/profiles/andres_flores.jpg'],
+	['SECRETARíA TéCNICA', 'Daniel Padilla','gdanielpadilla','images/profiles/daniel_padilla.jpg'],
 ];
 
 render('main', $context, function($context){
@@ -71,7 +71,7 @@ render('main', $context, function($context){
 					Es el máximo órgano de decisión de Wikipolítica Jalisco. Está conformada por <strong>todas las personas Asambleístas</strong>, y es el órgano encargado de designar al Consejo Político, los Coordinadores, y al Consejo de Vigilancia, así como de votar las decisiones importantes para el Nodo. 
 				</p>
 				
-				<button type="button" class="btn pink" data-toggle="modal" data-target=".detalle_asamblea">Ver Miembros</button>
+				<!--<button type="button" class="btn pink" data-toggle="modal" data-target=".detalle_asamblea">Ver Miembros</button>-->
 				
 
 			</div>
@@ -141,16 +141,22 @@ render('main', $context, function($context){
 					</button>
 				</div>
 				<div class="modal-body">
-					<table class="table table-borderless">
-						<thead><th>Coordinación</th><th>Nombre</th><th>Twitter</th></thead>
-						<?php foreach($equipo_ejecutivo AS $miembro):?>
-							<tr>
-								<td><?=ucwords(strtolower($miembro[0]))?></td>
-								<td><?=$miembro[1]?></td>
-								<td><a href="https://twitter.com/<?=$miembro[2]?>" target="_blank"><?=!empty($miembro[2])?'@'.$miembro[2]:''?></a></td>
-							</tr>
+					<div class="row">
+					    <?php foreach($equipo_ejecutivo AS $miembro): ?>
+						<div class="col-lg-6">
+							<div class="card">
+								<img class="card-img-top" src="<?=$miembro[3]?>" alt="<?=htmlspecialchars($miembro[1])?>">
+								<div class="card-body">
+									<?php if(!empty($miembro[2])): ?>
+										<a class="btn btn-light" style="float:right" href="https://twitter.com/<?=$miembro[2]?>" target="_blank"><?=!empty($miembro[2])?'@'.$miembro[2]:''?></a>
+									<?php endif; ?>
+									<h4 class="card-title"><?=htmlspecialchars($miembro[1])?></h4>
+									<h5 class="card-text"><?=htmlspecialchars(ucwords(strtolower($miembro[0])))?></h5>
+								</div>
+							</div>
+						</div>
 						<?php endforeach; ?>
-					</table>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -166,17 +172,20 @@ render('main', $context, function($context){
 					</button>
 				</div>
 				<div class="modal-body">
-					<table class="table table-striped">
-						<thead><th>Nombre</th><th>Twitter</th></thead>
-						<tbody>
-							<?php foreach($consejo_vigilancia AS $miembro):?>
-								<tr>
-									<td><?=$miembro[0]?></td>
-									<td><a href="https://twitter.com/<?=$miembro[1]?>" target="_blank"><?=!empty($miembro[1])?'@'.$miembro[1]:''?></a></td>
-								</tr>
-							<?php endforeach; ?>
-						</tbody>
-					</table>
+					<div class="row">
+					    <?php foreach($consejo_vigilancia AS $miembro): ?>
+						<div class="col-lg-6">
+							<div class="card">
+								<img class="card-img-top" src="<?=$miembro[2]?>" alt="<?=htmlspecialchars($miembro[0])?>">
+								<div class="card-body">
+									<a class="btn btn-light" style="float:right" href="https://twitter.com/<?=$miembro[1]?>" target="_blank"><?='@'.$miembro[1]?></a>
+									<h4 class="card-title"><?=htmlspecialchars($miembro[0])?></h4>
+									
+								</div>
+							</div>
+						</div>
+						<?php endforeach; ?>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -193,17 +202,20 @@ render('main', $context, function($context){
 					</button>
 				</div>
 				<div class="modal-body">
-					<table class="table table-striped">
-						<thead><th>Nombre</th><th>Twitter</th></thead>
-						<tbody>
-							<?php foreach($consejo_politico AS $miembro):?>
-								<tr>
-									<td><?=$miembro[0]?></td>
-									<td><a href="https://twitter.com/<?=$miembro[1]?>" target="_blank"><?=!empty($miembro[1])?'@'.$miembro[1]:''?></a></td>
-								</tr>
-							<?php endforeach; ?>
-						</tbody>
-					</table>	
+				<div class="row">
+					    <?php foreach($consejo_politico AS $miembro): ?>
+						<div class="col-lg-6">
+							<div class="card">
+								<img class="card-img-top" src="<?=$miembro[2]?>" alt="<?=htmlspecialchars($miembro[0])?>">
+								<div class="card-body">
+									<a class="btn btn-light" style="float:right" href="https://twitter.com/<?=$miembro[1]?>" target="_blank"><?='@'.$miembro[1]?></a>
+									<h4 class="card-title"><?=htmlspecialchars($miembro[0])?></h4>
+									
+								</div>
+							</div>
+						</div>
+						<?php endforeach; ?>
+					</div>
 				</div>
 			</div>
 		</div>
