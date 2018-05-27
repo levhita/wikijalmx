@@ -19,7 +19,7 @@ $context['consejo_politico'] = [
 $context['consejo_vigilancia'] = [
 	['Álvaro Quintero','alvaro_qc','images/profiles/alvaro.jpg'],
 	['Mariela Elizondo','Wall_a_bee','images/profiles/mariela.jpg'],
-	['Pablo Guízar','PabloTguizar','images/profiles/pablo_guizar.jpg'],
+	['Pablo Guízar','PGuizr','images/profiles/pablo_guizar.jpg'],
 ];
 
 $context['equipo_ejecutivo'] = [
